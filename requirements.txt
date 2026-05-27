@@ -1,0 +1,29 @@
+fastapi>=0.115.0
+uvicorn>=0.32.0
+pydantic>=2.10.0
+python-multipart>=0.0.12
+requests>=2.31.0
+
+# Optional AI dependencies
+# Uncomment and install as needed:
+
+# For OpenAI integration (GPT-5.2):
+openai>=1.50.0
+
+# For Google Gemini:
+google-genai>=1.0.0
+
+# For Anthropic Claude:
+anthropic>=0.40.0
+
+# For local AI models:
+# transformers==4.35.0
+# torch==2.1.0
+# tensorflow==2.13.0
+
+# For web scraping:
+# beautifulsoup4==4.12.0
+
+# For better text processing:
+# spacy==3.7.0
+# nltk==3.8.0
