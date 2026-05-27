@@ -337,23 +337,17 @@ def _extract_cursor_cli_text(stdout: str) -> str:
 def _llm_system_prompt(question_type: str) -> str:
     if _is_multi_select(question_type):
         return (
-            "You are an expert quiz assistant for university courses. "
-            "The user will give you a question and a labeled list of options (A, B, C…). "
-            "Pick every correct option. "
-            "Reply with ONLY a JSON object — no markdown, no explanation outside JSON:\n"
-            '{"answers": ["full text of option 1", "full text of option 2"], '
-            '"answer": "full text of option 1", '
-            '"confidence": 0.95, "reasoning": "one sentence"}\n'
-            "The strings in answers[] must be copied EXACTLY as they appear in the options list."
+            "You answer academic SELECT-ALL-THAT-APPLY (checkbox) questions. "
+            'Respond with JSON only: {"answers": ["<exact option 1>", "<exact option 2>", ...], '
+            '"confidence": <0.0-1.0>, "reasoning": "<brief>"}. '
+            "Include every correct option in answers — copy each string verbatim from the list. "
+            'Also set "answer" to the first selected option for compatibility.'
         )
     return (
-        "You are an expert quiz assistant for university courses. "
-        "The user will give you a question and a labeled list of options (A, B, C…). "
-        "Pick the single best correct answer. "
-        "Reply with ONLY a JSON object — no markdown, no explanation outside JSON:\n"
-        '{"answer": "full text of the correct option", '
-        '"confidence": 0.95, "reasoning": "one sentence"}\n'
-        "The answer string must be copied EXACTLY as it appears in the options list."
+        "You answer academic single-choice (radio) questions. "
+        'Respond with JSON only: {"answer": "<exact option text from the list>", '
+        '"confidence": <0.0-1.0>, "reasoning": "<brief>"}. '
+        "Select exactly one option; the answer field must copy it verbatim."
     )
 
 
@@ -726,7 +720,6 @@ class CourseraAI:
         response = await self.anthropic_client.messages.create(
             model=self.claude_model,
             max_tokens=1024,
-            temperature=0,
             system=_llm_system_prompt(question_type),
             messages=[{"role": "user", "content": prompt}],
         )
@@ -1202,25 +1195,35 @@ class CourseraAI:
             result["answer"] = "; ".join(picked)
         return result
     
-    def _create_prompt(self, question: str, options: List[str],
+    def _create_prompt(self, question: str, options: List[str], 
                       question_type: str, context: str) -> str:
         """Create a prompt for AI models"""
-        prompt = f"Question: {question}\n\n"
-        if context:
-            prompt += f"Context: {context}\n\n"
-        prompt += "Options:\n"
-        for i, option in enumerate(options):
-            prompt += f"{chr(65 + i)}. {option}\n"
+        prompt = f"""You are an expert academic assistant helping with online course questions.
 
+Question: {question}
+
+Options:
+"""
+        for i, option in enumerate(options, 1):
+            prompt += f"{chr(64 + i)}. {option}\n"
+        
+        if context:
+            prompt += f"\nContext: {context}\n"
+        
         if _is_multi_select(question_type):
             n = _expected_answer_count(question)
-            prompt += (
-                f"\nSelect exactly {n} correct options." if n
-                else "\nSelect all correct options (may be more than one)."
+            count_line = (
+                f" Select exactly {n} correct option(s)."
+                if n
+                else " Select every correct option (all that apply)."
             )
+            prompt += f"""
+This is a SELECT-ALL-THAT-APPLY question (checkboxes).{count_line}
+Return all correct option texts in the "answers" JSON array (copy each verbatim)."""
         else:
-            prompt += "\nSelect the single correct option."
-
+            prompt += """
+This is a single-choice question (radio). Choose exactly one best option."""
+        
         return prompt
 
 # Global AI instance

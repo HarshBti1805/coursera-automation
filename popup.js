@@ -1,98 +1,87 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const speedBtns       = document.querySelectorAll('.speed-btn');
+// Popup JavaScript
+document.addEventListener('DOMContentLoaded', function () {
+  const speedButtons = document.querySelectorAll('.speed-btn');
   const customSpeedInput = document.getElementById('customSpeed');
   const setCustomSpeedBtn = document.getElementById('setCustomSpeed');
-  const autoAnswerCheck  = document.getElementById('autoAnswerCheck');
-  const statusEl         = document.getElementById('status');
-  const currentSpeedLabel = document.getElementById('currentSpeedLabel');
-  const backendDot       = document.getElementById('backendDot');
-  const backendLabel     = document.getElementById('backendLabel');
+  const autoAnswerToggle = document.getElementById('autoAnswerToggle');
+  const status = document.getElementById('status');
 
-  // ── Backend health ping ──
-  fetch('http://localhost:8000/health', { signal: AbortSignal.timeout(2500) })
-    .then(r => r.ok ? r.json() : Promise.reject())
-    .then(data => {
-      backendDot.className = 'dot online';
-      backendLabel.textContent = data.ai_provider ?? 'online';
-    })
-    .catch(() => {
-      backendDot.className = 'dot offline';
-      backendLabel.textContent = 'offline';
-    });
-
-  // ── Load saved state ──
-  chrome.storage.sync.get(['autoAnswerEnabled', 'currentSpeed'], result => {
-    autoAnswerCheck.checked = !!result.autoAnswerEnabled;
-    if (result.autoAnswerEnabled) setStatus('active', 'auto answer on');
+  // Load saved settings
+  chrome.storage.sync.get(['autoAnswerEnabled', 'currentSpeed'], function (result) {
+    if (result.autoAnswerEnabled) {
+      autoAnswerToggle.textContent = 'Disable Auto Answer';
+      autoAnswerToggle.classList.add('active');
+    }
 
     if (result.currentSpeed) {
-      updateSpeedUI(result.currentSpeed);
+      // Highlight current speed button
+      speedButtons.forEach(btn => {
+        if (parseFloat(btn.dataset.speed) === result.currentSpeed) {
+          btn.classList.add('active');
+        }
+      });
     }
   });
 
-  // ── Speed buttons ──
-  speedBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      setVideoSpeed(parseFloat(btn.dataset.speed));
-      speedBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  // Speed button handlers
+  speedButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const speed = parseFloat(this.dataset.speed);
+      setVideoSpeed(speed);
+
+      // Update UI
+      speedButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
     });
   });
 
-  // ── Custom speed ──
-  setCustomSpeedBtn.addEventListener('click', applyCustomSpeed);
-  customSpeedInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') applyCustomSpeed();
-  });
-
-  function applyCustomSpeed() {
-    const val = parseFloat(customSpeedInput.value);
-    if (val > 0 && val <= 10) {
-      setVideoSpeed(val);
-      speedBtns.forEach(b => b.classList.remove('active'));
+  // Custom speed handler
+  setCustomSpeedBtn.addEventListener('click', function () {
+    const speed = parseFloat(customSpeedInput.value);
+    if (speed && speed > 0 && speed <= 10) {
+      setVideoSpeed(speed);
+      speedButtons.forEach(btn => btn.classList.remove('active'));
       customSpeedInput.value = '';
     }
-  }
+  });
 
-  // ── Toggle auto answer ──
-  autoAnswerCheck.addEventListener('change', () => {
-    const enabled = autoAnswerCheck.checked;
-    chrome.storage.sync.set({ autoAnswerEnabled: enabled });
+  // Auto answer toggle
+  autoAnswerToggle.addEventListener('click', function () {
+    chrome.storage.sync.get(['autoAnswerEnabled'], function (result) {
+      const newState = !result.autoAnswerEnabled;
 
-    if (enabled) {
-      setStatus('active', 'auto answer on');
-    } else {
-      setStatus('', 'auto answer off');
-    }
+      chrome.storage.sync.set({ autoAnswerEnabled: newState }, function () {
+        if (newState) {
+          autoAnswerToggle.textContent = 'Disable Auto Answer';
+          autoAnswerToggle.classList.add('active');
+          status.textContent = 'Auto Answer Enabled';
+        } else {
+          autoAnswerToggle.textContent = 'Enable Auto Answer';
+          autoAnswerToggle.classList.remove('active');
+          status.textContent = 'Auto Answer Disabled';
+        }
 
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      if (tabs[0]) {
-        chrome.tabs.sendMessage(tabs[0].id, { action: 'toggleAutoAnswer', enabled });
-      }
+        // Send message to content script
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+          chrome.tabs.sendMessage(tabs[0].id, {
+            action: 'toggleAutoAnswer',
+            enabled: newState
+          });
+        });
+      });
     });
   });
 
-  // ── Helpers ──
   function setVideoSpeed(speed) {
     chrome.storage.sync.set({ currentSpeed: speed });
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      if (tabs[0]) {
-        chrome.tabs.sendMessage(tabs[0].id, { action: 'setVideoSpeed', speed });
-      }
-    });
-    updateSpeedUI(speed);
-    setStatus('ok', `speed → ${speed}×`);
-  }
 
-  function updateSpeedUI(speed) {
-    currentSpeedLabel.textContent = `${speed}×`;
-    speedBtns.forEach(b => {
-      b.classList.toggle('active', parseFloat(b.dataset.speed) === speed);
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      chrome.tabs.sendMessage(tabs[0].id, {
+        action: 'setVideoSpeed',
+        speed: speed
+      });
     });
-  }
 
-  function setStatus(cls, text) {
-    statusEl.className = 'status-line' + (cls ? ` ${cls}` : '');
-    statusEl.textContent = text;
+    status.textContent = `Speed set to ${speed}x`;
   }
 });
