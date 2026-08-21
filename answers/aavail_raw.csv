@@ -1,0 +1,2001 @@
+customer_id,country,age,gender,subscriber_type,tenure_months,num_streams,customer_service_calls,monthly_charges,is_subscribed
+100000,Canada,26.0,male,family,7.0,18.0,1.0,20.37,False
+100001,Singapore,44.0,female,premium,5.0,15.0,0.0,16.55,False
+100002,Australia,31.0,male,student,15.0,27.0,2.0,6.53,True
+100003,United Kingdom,18.0,female,family,31.0,17.0,4.0,19.55,True
+100004,United States,35.0,male,basic,34.0,16.0,1.0,8.83,True
+100005,Malaysia,54.0,female,student,16.0,15.0,1.0,7.4,False
+100006,Canada,44.0,male,premium,17.0,26.0,1.0,14.94,True
+100007,Canada,62.0,female,basic,12.0,20.0,2.0,9.05,True
+100008,United States,40.0,female,basic,8.0,13.0,0.0,9.46,False
+100009,Singapore,67.0,male,family,10.0,20.0,0.0,20.44,False
+100010,United States,40.0,female,basic,17.0,,1.0,9.34,False
+100011,Malaysia,38.0,female,basic,10.0,15.0,1.0,9.52,True
+100012,United Kingdom,23.0,male,basic,4.0,13.0,2.0,7.62,False
+100013,Australia,51.0,,premium,17.0,18.0,3.0,16.8,False
+100014,Singapore,32.0,male,premium,12.0,23.0,0.0,16.16,True
+100015,United States,30.0,male,premium,48.0,18.0,2.0,16.66,True
+100016,Singapore,53.0,female,basic,5.0,17.0,0.0,8.4,False
+100017,United States,52.0,female,basic,14.0,16.0,0.0,8.11,True
+100018,Australia,52.0,female,premium,11.0,22.0,1.0,16.88,True
+100019,United Kingdom,,male,premium,35.0,20.0,,15.53,False
+100020,Canada,37.0,female,family,9.0,18.0,0.0,19.83,True
+100021,United States,37.0,female,basic,25.0,17.0,0.0,9.25,False
+100022,Malaysia,47.0,female,basic,6.0,,1.0,9.38,False
+100023,Australia,57.0,male,basic,26.0,,3.0,9.53,False
+100024,Canada,42.0,male,premium,15.0,10.0,2.0,16.1,False
+100025,United States,62.0,male,premium,6.0,24.0,1.0,15.46,False
+100026,Singapore,49.0,male,family,9.0,18.0,2.0,20.34,True
+100027,United States,35.0,male,premium,25.0,13.0,0.0,16.35,True
+100028,United States,48.0,male,premium,16.0,20.0,2.0,15.08,False
+100029,United Kingdom,,male,premium,8.0,20.0,0.0,16.7,True
+100030,Canada,62.0,male,basic,13.0,18.0,0.0,7.75,True
+100031,Malaysia,52.0,,premium,17.0,23.0,2.0,16.51,False
+100032,United States,38.0,male,basic,2.0,18.0,1.0,8.67,False
+100033,United States,35.0,male,premium,11.0,18.0,1.0,16.34,False
+100034,Singapore,45.0,female,basic,31.0,,2.0,9.25,True
+100035,United States,58.0,female,family,35.0,21.0,1.0,19.97,True
+100036,United States,43.0,female,student,11.0,21.0,0.0,7.22,True
+100037,Singapore,43.0,male,basic,26.0,15.0,2.0,8.95,False
+100038,United States,39.0,female,premium,16.0,17.0,1.0,16.35,True
+100039,United Kingdom,34.0,male,family,28.0,17.0,2.0,21.08,True
+100040,Singapore,36.0,female,basic,15.0,21.0,2.0,8.32,False
+100041,Australia,40.0,male,family,26.0,18.0,1.0,18.4,False
+100042,United Kingdom,59.0,female,premium,12.0,8.0,0.0,15.78,False
+100043,United States,35.0,male,student,4.0,24.0,2.0,6.75,True
+100044,Australia,39.0,male,student,16.0,15.0,0.0,6.8,True
+100045,Canada,28.0,female,basic,12.0,21.0,0.0,8.53,False
+100046,Singapore,47.0,female,premium,15.0,27.0,0.0,16.43,True
+100047,United States,54.0,female,premium,27.0,18.0,1.0,15.3,True
+100048,United Kingdom,57.0,female,basic,60.0,28.0,3.0,9.22,True
+100049,United States,40.0,male,basic,43.0,20.0,,9.31,True
+100050,United States,45.0,male,student,14.0,19.0,0.0,7.15,True
+100051,United States,,male,basic,8.0,,3.0,9.23,False
+100052,Canada,44.0,male,premium,18.0,20.0,,,False
+100053,United Kingdom,42.0,female,family,13.0,14.0,2.0,20.02,True
+100054,United Kingdom,39.0,male,basic,46.0,20.0,2.0,8.82,True
+100055,Canada,40.0,male,premium,50.0,14.0,0.0,16.23,False
+100056,Singapore,43.0,female,student,29.0,,2.0,,False
+100057,Singapore,34.0,male,premium,6.0,24.0,0.0,16.43,False
+100058,United States,,female,basic,17.0,20.0,0.0,8.13,False
+100059,United States,58.0,male,basic,22.0,16.0,1.0,8.9,True
+100060,United Kingdom,71.0,,student,16.0,20.0,0.0,6.46,True
+100061,Singapore,24.0,male,basic,16.0,25.0,1.0,9.27,False
+100062,Singapore,23.0,female,premium,19.0,14.0,4.0,16.35,False
+100063,Canada,27.0,male,basic,80.0,20.0,1.0,8.85,True
+100064,United Kingdom,37.0,female,premium,10.0,23.0,0.0,15.63,False
+100065,Singapore,49.0,male,student,59.0,18.0,1.0,7.29,False
+100066,Singapore,,female,premium,23.0,17.0,0.0,15.92,False
+100067,United States,40.0,male,student,21.0,12.0,1.0,7.7,False
+100068,United States,44.0,male,basic,14.0,17.0,0.0,9.88,False
+100069,Singapore,30.0,female,premium,11.0,19.0,0.0,16.49,False
+100070,United States,35.0,female,student,2.0,,0.0,7.11,False
+100071,Singapore,38.0,male,premium,8.0,15.0,1.0,16.9,True
+100072,Australia,19.0,female,basic,3.0,20.0,0.0,9.11,False
+100073,United States,24.0,female,student,3.0,11.0,3.0,6.75,False
+100074,United States,25.0,female,premium,5.0,11.0,3.0,15.65,True
+100075,United States,47.0,female,premium,36.0,21.0,0.0,15.64,False
+100076,United States,41.0,male,student,36.0,,0.0,6.99,False
+100077,United Kingdom,45.0,male,basic,9.0,22.0,1.0,9.22,True
+100078,Singapore,18.0,female,basic,4.0,,1.0,8.28,False
+100079,Canada,20.0,female,basic,11.0,25.0,1.0,8.77,True
+100080,United Kingdom,46.0,female,premium,26.0,24.0,1.0,16.1,True
+100081,Singapore,18.0,female,basic,31.0,17.0,2.0,9.31,True
+100082,Canada,53.0,male,family,18.0,14.0,4.0,19.98,False
+100083,United States,,female,basic,21.0,26.0,,9.11,False
+100084,United States,48.0,male,family,19.0,9.0,0.0,19.37,True
+100085,United States,,male,basic,3.0,13.0,3.0,8.53,False
+100086,Canada,51.0,male,premium,4.0,25.0,1.0,15.96,True
+100087,Singapore,76.0,,basic,48.0,18.0,1.0,9.25,False
+100088,United States,18.0,female,family,18.0,24.0,2.0,20.11,False
+100089,Singapore,46.0,female,premium,2.0,13.0,2.0,15.57,False
+100090,United States,18.0,female,premium,22.0,13.0,,15.87,False
+100091,United Kingdom,43.0,male,student,7.0,22.0,0.0,7.75,True
+100092,Singapore,36.0,male,premium,33.0,22.0,,,False
+100093,Singapore,40.0,female,basic,31.0,22.0,2.0,8.91,False
+100094,United States,,female,student,25.0,,2.0,6.48,True
+100095,United Kingdom,47.0,,basic,18.0,14.0,0.0,8.63,False
+100096,United States,21.0,male,basic,39.0,21.0,1.0,8.99,True
+100097,United States,53.0,male,premium,42.0,16.0,,16.13,True
+100098,United States,33.0,male,basic,7.0,22.0,1.0,9.27,False
+100099,Malaysia,21.0,male,basic,25.0,10.0,2.0,9.18,False
+100100,Australia,57.0,female,family,10.0,14.0,1.0,19.8,True
+100101,United Kingdom,,male,basic,6.0,11.0,3.0,8.73,False
+100102,United States,61.0,male,family,42.0,20.0,,21.01,False
+100103,Malaysia,53.0,female,student,28.0,20.0,0.0,6.71,True
+100104,Canada,28.0,male,premium,19.0,26.0,0.0,15.34,False
+100105,United Kingdom,37.0,female,family,8.0,18.0,0.0,19.17,True
+100106,Singapore,39.0,male,family,42.0,20.0,1.0,19.81,False
+100107,United States,56.0,male,student,7.0,20.0,2.0,7.46,False
+100108,United States,43.0,male,basic,6.0,25.0,0.0,8.7,True
+100109,Australia,40.0,male,basic,16.0,20.0,1.0,9.73,False
+100110,Singapore,,female,premium,26.0,15.0,0.0,15.99,True
+100111,United States,37.0,male,premium,12.0,18.0,3.0,16.54,False
+100112,United States,54.0,male,basic,18.0,14.0,1.0,8.61,True
+100113,Singapore,38.0,,premium,10.0,15.0,1.0,15.62,True
+100114,United States,33.0,male,basic,11.0,,1.0,9.04,True
+100115,Australia,31.0,female,student,52.0,,1.0,7.23,True
+100116,Canada,,male,basic,15.0,18.0,0.0,8.9,False
+100117,United Kingdom,21.0,male,basic,41.0,23.0,3.0,9.14,False
+100118,Singapore,29.0,female,basic,3.0,17.0,0.0,9.28,True
+100119,United Kingdom,56.0,male,basic,34.0,18.0,1.0,8.28,True
+100120,Singapore,36.0,male,basic,8.0,20.0,1.0,8.82,True
+100121,United Kingdom,,male,basic,28.0,22.0,2.0,8.73,False
+100122,United States,18.0,male,basic,8.0,15.0,1.0,8.75,False
+100123,Singapore,45.0,female,basic,11.0,20.0,0.0,9.19,False
+100124,United States,36.0,nonbinary,premium,6.0,18.0,1.0,15.74,False
+100125,Singapore,32.0,female,premium,28.0,14.0,,14.99,False
+100126,United States,,male,basic,32.0,22.0,3.0,8.87,False
+100127,United States,32.0,female,basic,8.0,22.0,1.0,8.46,False
+100128,United States,18.0,male,basic,4.0,12.0,0.0,9.24,True
+100129,Singapore,49.0,male,basic,40.0,15.0,0.0,9.39,True
+100130,United States,41.0,male,basic,9.0,15.0,2.0,7.9,False
+100131,Malaysia,34.0,male,family,14.0,21.0,1.0,19.6,True
+100132,Singapore,26.0,female,student,7.0,14.0,3.0,7.17,False
+100133,United States,20.0,male,student,27.0,,1.0,6.29,False
+100134,Singapore,41.0,male,premium,27.0,20.0,1.0,16.38,True
+100135,United States,57.0,female,premium,45.0,23.0,,16.51,True
+100136,Malaysia,40.0,male,basic,34.0,11.0,0.0,8.91,True
+100137,Singapore,21.0,male,family,33.0,19.0,2.0,19.6,True
+100138,Canada,41.0,male,family,15.0,13.0,1.0,18.83,False
+100139,United States,37.0,male,family,14.0,24.0,2.0,20.4,True
+100140,Singapore,48.0,female,student,26.0,,1.0,7.99,False
+100141,Singapore,45.0,male,premium,14.0,17.0,1.0,16.89,False
+100142,Malaysia,,female,family,35.0,14.0,1.0,19.89,False
+100143,Singapore,45.0,female,family,7.0,21.0,1.0,19.44,False
+100144,Singapore,26.0,female,basic,3.0,19.0,1.0,9.41,False
+100145,United States,21.0,female,student,24.0,21.0,2.0,6.93,True
+100146,United States,36.0,female,basic,10.0,23.0,2.0,9.23,False
+100147,Singapore,43.0,male,student,6.0,15.0,3.0,7.14,False
+100148,Singapore,18.0,female,family,64.0,18.0,1.0,20.04,False
+100149,United States,46.0,female,basic,16.0,18.0,2.0,9.5,False
+100150,Australia,47.0,female,family,5.0,12.0,0.0,20.52,False
+100151,Australia,,male,basic,9.0,17.0,0.0,8.73,True
+100152,United States,28.0,female,family,13.0,26.0,2.0,19.53,True
+100153,Singapore,26.0,female,family,24.0,20.0,3.0,18.74,True
+100154,United States,50.0,male,premium,9.0,21.0,1.0,15.82,False
+100155,United Kingdom,20.0,female,student,14.0,,1.0,6.44,False
+100156,United States,51.0,male,basic,20.0,,0.0,9.2,True
+100157,United Kingdom,,,basic,23.0,16.0,2.0,8.82,True
+100158,Canada,37.0,female,premium,15.0,15.0,1.0,15.88,True
+100159,Canada,18.0,female,basic,51.0,23.0,1.0,9.4,True
+100160,United States,36.0,male,premium,27.0,16.0,0.0,16.19,True
+100161,Malaysia,45.0,female,basic,26.0,11.0,0.0,8.93,False
+100162,United States,22.0,male,premium,25.0,17.0,2.0,16.83,False
+100163,United States,44.0,female,premium,35.0,23.0,1.0,16.36,True
+100164,Singapore,39.0,male,student,19.0,11.0,3.0,6.78,False
+100165,United States,30.0,female,basic,7.0,,1.0,8.8,True
+100166,Australia,48.0,female,student,22.0,20.0,1.0,7.38,True
+100167,Canada,18.0,female,premium,24.0,26.0,2.0,16.09,False
+100168,United States,42.0,male,basic,39.0,,2.0,8.43,False
+100169,Malaysia,57.0,female,premium,6.0,19.0,2.0,16.44,True
+100170,United States,55.0,nonbinary,premium,7.0,15.0,1.0,16.62,True
+100171,Singapore,43.0,male,basic,17.0,16.0,0.0,9.58,True
+100172,United States,34.0,nonbinary,premium,26.0,17.0,2.0,16.76,True
+100173,Malaysia,30.0,female,basic,5.0,20.0,0.0,10.02,True
+100174,United States,34.0,male,premium,6.0,19.0,2.0,,False
+100175,United States,45.0,male,premium,30.0,15.0,1.0,16.16,False
+100176,Singapore,28.0,male,premium,5.0,13.0,2.0,15.89,False
+100177,Malaysia,47.0,nonbinary,family,8.0,19.0,2.0,19.08,False
+100178,Australia,64.0,male,basic,31.0,20.0,0.0,,True
+100179,Canada,37.0,male,student,25.0,9.0,1.0,7.25,False
+100180,Australia,22.0,male,family,9.0,18.0,1.0,20.01,True
+100181,Australia,22.0,female,student,23.0,,0.0,6.05,False
+100182,Singapore,47.0,male,family,20.0,20.0,0.0,19.85,True
+100183,United States,37.0,male,basic,15.0,28.0,0.0,9.31,False
+100184,Canada,49.0,male,premium,12.0,20.0,0.0,15.48,True
+100185,United Kingdom,32.0,male,basic,23.0,25.0,2.0,9.07,False
+100186,United States,48.0,female,family,6.0,14.0,1.0,20.21,False
+100187,United States,36.0,female,premium,22.0,15.0,0.0,16.55,False
+100188,Canada,29.0,female,basic,19.0,,1.0,9.85,True
+100189,United States,33.0,male,student,20.0,,1.0,6.8,False
+100190,Malaysia,24.0,female,basic,7.0,13.0,2.0,9.08,True
+100191,United States,62.0,male,premium,40.0,19.0,1.0,16.1,True
+100192,United States,,male,family,9.0,21.0,0.0,20.31,False
+100193,Australia,46.0,male,basic,11.0,22.0,0.0,9.26,False
+100194,United States,32.0,female,premium,14.0,26.0,4.0,16.7,False
+100195,United States,25.0,male,family,25.0,18.0,5.0,18.82,False
+100196,Singapore,35.0,female,basic,19.0,15.0,3.0,9.2,False
+100197,Australia,51.0,male,premium,4.0,16.0,0.0,16.23,True
+100198,United States,32.0,female,basic,16.0,,4.0,8.87,True
+100199,United States,28.0,female,family,17.0,11.0,1.0,18.86,False
+100200,Canada,40.0,female,basic,41.0,,0.0,8.96,True
+100201,Malaysia,44.0,male,student,13.0,,1.0,6.63,True
+100202,Singapore,58.0,,student,24.0,16.0,,7.83,False
+100203,United States,42.0,male,basic,83.0,,,9.18,True
+100204,United States,46.0,male,basic,36.0,12.0,1.0,8.59,True
+100205,United States,47.0,male,premium,7.0,14.0,2.0,14.96,True
+100206,United States,24.0,female,family,28.0,12.0,,20.29,True
+100207,United Kingdom,26.0,female,premium,22.0,15.0,0.0,16.34,False
+100208,United States,25.0,female,basic,12.0,14.0,1.0,8.88,False
+100209,Singapore,22.0,female,basic,28.0,,0.0,9.29,True
+100210,United Kingdom,48.0,male,student,7.0,28.0,1.0,6.82,False
+100211,Singapore,41.0,female,premium,10.0,19.0,0.0,16.52,False
+100212,United States,39.0,female,student,14.0,14.0,1.0,,False
+100213,Canada,18.0,female,premium,12.0,10.0,2.0,15.17,False
+100214,United Kingdom,63.0,,student,26.0,17.0,1.0,6.29,False
+100215,Canada,27.0,female,basic,16.0,13.0,0.0,10.01,True
+100216,United States,63.0,male,basic,11.0,15.0,1.0,9.46,False
+100217,United States,21.0,female,student,36.0,11.0,,6.36,False
+100218,Malaysia,28.0,nonbinary,student,25.0,14.0,2.0,6.2,False
+100219,Singapore,18.0,male,basic,4.0,12.0,2.0,9.09,False
+100220,United States,42.0,female,premium,4.0,21.0,0.0,15.42,True
+100221,Singapore,,female,premium,11.0,13.0,0.0,15.83,True
+100222,United Kingdom,25.0,female,premium,5.0,15.0,1.0,15.97,True
+100223,Malaysia,22.0,female,basic,32.0,26.0,,8.94,True
+100224,United States,47.0,female,student,10.0,18.0,0.0,7.55,True
+100225,Malaysia,47.0,male,basic,24.0,20.0,2.0,9.91,True
+100226,United States,60.0,male,family,27.0,22.0,2.0,19.75,True
+100227,Singapore,30.0,female,basic,2.0,18.0,2.0,8.42,True
+100228,United Kingdom,,male,basic,10.0,21.0,1.0,9.18,False
+100229,United States,23.0,female,family,14.0,16.0,0.0,20.81,True
+100230,United States,34.0,nonbinary,basic,20.0,14.0,2.0,8.79,True
+100231,Singapore,32.0,female,family,31.0,16.0,0.0,20.42,False
+100232,Malaysia,,male,basic,66.0,,,8.57,True
+100233,Singapore,50.0,male,student,48.0,20.0,3.0,7.0,False
+100234,Malaysia,50.0,female,family,16.0,13.0,1.0,19.41,True
+100235,Canada,,female,student,15.0,18.0,0.0,7.0,True
+100236,Singapore,50.0,female,basic,45.0,17.0,1.0,8.93,False
+100237,Canada,37.0,male,basic,16.0,,0.0,9.29,False
+100238,United States,34.0,male,premium,10.0,11.0,1.0,16.88,False
+100239,United States,29.0,male,premium,32.0,24.0,0.0,15.8,False
+100240,Australia,31.0,male,basic,21.0,17.0,,7.99,False
+100241,Canada,59.0,male,basic,4.0,26.0,3.0,8.89,True
+100242,United States,42.0,female,premium,13.0,16.0,0.0,16.14,False
+100243,Singapore,40.0,male,basic,5.0,24.0,1.0,9.09,True
+100244,United Kingdom,35.0,,premium,1.0,14.0,2.0,15.91,False
+100245,Australia,67.0,female,basic,52.0,23.0,2.0,9.73,False
+100246,United Kingdom,54.0,male,basic,18.0,23.0,0.0,,True
+100247,Singapore,29.0,female,premium,13.0,17.0,1.0,15.94,True
+100248,United States,35.0,female,premium,11.0,25.0,2.0,15.6,True
+100249,Singapore,35.0,male,basic,17.0,19.0,3.0,8.12,False
+100250,United Kingdom,40.0,female,premium,11.0,14.0,1.0,16.15,False
+100251,Australia,30.0,female,family,7.0,16.0,1.0,20.11,True
+100252,Singapore,43.0,female,premium,11.0,22.0,2.0,,True
+100253,United States,55.0,male,premium,42.0,17.0,,15.97,False
+100254,United States,22.0,male,student,32.0,,0.0,6.92,False
+100255,Canada,24.0,female,premium,11.0,12.0,2.0,15.68,False
+100256,Canada,32.0,female,student,56.0,19.0,1.0,6.59,True
+100257,United States,33.0,female,family,15.0,19.0,1.0,20.19,True
+100258,United States,62.0,male,basic,8.0,21.0,1.0,8.88,True
+100259,Singapore,50.0,female,premium,21.0,18.0,2.0,15.69,True
+100260,United States,49.0,male,family,46.0,16.0,,19.56,True
+100261,Australia,35.0,male,student,40.0,18.0,,6.93,True
+100262,United States,35.0,,premium,9.0,19.0,1.0,16.45,True
+100263,United States,21.0,male,basic,6.0,19.0,0.0,9.09,False
+100264,Malaysia,47.0,male,premium,12.0,21.0,1.0,15.87,True
+100265,United States,44.0,male,basic,24.0,22.0,1.0,9.14,False
+100266,United States,53.0,female,family,29.0,20.0,2.0,20.67,True
+100267,United States,35.0,male,premium,37.0,18.0,1.0,16.24,True
+100268,United States,36.0,male,family,19.0,14.0,1.0,20.12,True
+100269,United States,40.0,male,student,19.0,24.0,1.0,7.31,False
+100270,United States,49.0,nonbinary,premium,18.0,19.0,0.0,15.91,True
+100271,United States,20.0,female,premium,33.0,26.0,0.0,16.08,False
+100272,United States,47.0,male,family,29.0,12.0,3.0,19.75,False
+100273,Singapore,38.0,male,family,9.0,20.0,0.0,19.21,True
+100274,United Kingdom,,female,student,27.0,27.0,3.0,7.16,False
+100275,Singapore,18.0,female,basic,32.0,21.0,1.0,9.16,True
+100276,United States,36.0,female,premium,34.0,14.0,1.0,15.85,True
+100277,Singapore,55.0,male,basic,21.0,15.0,1.0,9.51,True
+100278,Australia,58.0,female,student,20.0,14.0,3.0,6.63,True
+100279,Australia,42.0,male,premium,16.0,10.0,2.0,15.1,False
+100280,United States,62.0,female,premium,17.0,20.0,1.0,15.64,True
+100281,United States,,female,basic,50.0,24.0,1.0,8.22,False
+100282,United States,49.0,male,basic,18.0,21.0,1.0,9.16,True
+100283,United States,33.0,female,family,9.0,16.0,2.0,19.61,True
+100284,Singapore,32.0,male,basic,21.0,,1.0,9.48,True
+100285,Singapore,30.0,female,basic,28.0,,1.0,9.47,True
+100286,United States,18.0,male,student,33.0,26.0,1.0,6.53,True
+100287,United States,53.0,female,family,7.0,19.0,0.0,,True
+100288,Singapore,30.0,nonbinary,basic,44.0,26.0,,9.26,True
+100289,United States,28.0,male,basic,28.0,13.0,,,False
+100290,Australia,24.0,female,student,42.0,17.0,1.0,5.98,False
+100291,United States,36.0,female,family,5.0,13.0,1.0,20.13,True
+100292,Malaysia,59.0,female,premium,35.0,26.0,2.0,14.89,False
+100293,United States,63.0,male,basic,7.0,7.0,1.0,8.72,False
+100294,Australia,18.0,male,basic,13.0,22.0,1.0,,True
+100295,Australia,34.0,female,basic,28.0,19.0,,10.49,True
+100296,Malaysia,26.0,,family,6.0,14.0,1.0,19.87,False
+100297,Canada,50.0,male,basic,11.0,19.0,1.0,8.37,False
+100298,Canada,41.0,male,basic,5.0,15.0,0.0,8.73,False
+100299,United Kingdom,30.0,male,family,28.0,13.0,1.0,20.02,False
+100300,Canada,39.0,female,student,8.0,24.0,2.0,6.65,False
+100301,United States,32.0,male,family,17.0,16.0,3.0,19.53,True
+100302,Singapore,57.0,nonbinary,premium,22.0,22.0,2.0,15.78,False
+100303,Singapore,45.0,female,premium,21.0,20.0,0.0,16.19,True
+100304,Australia,46.0,female,premium,19.0,12.0,0.0,15.91,True
+100305,Singapore,18.0,female,basic,19.0,16.0,4.0,8.55,False
+100306,Singapore,37.0,male,premium,5.0,25.0,1.0,15.65,True
+100307,United Kingdom,63.0,female,premium,14.0,16.0,0.0,15.78,False
+100308,United States,54.0,male,premium,19.0,24.0,0.0,15.49,True
+100309,United States,18.0,male,student,18.0,15.0,1.0,6.64,True
+100310,Singapore,34.0,male,student,15.0,20.0,1.0,7.31,True
+100311,Singapore,24.0,male,basic,9.0,15.0,1.0,8.87,False
+100312,United States,59.0,female,premium,20.0,22.0,0.0,15.11,False
+100313,United States,41.0,male,basic,23.0,,1.0,9.5,False
+100314,United States,29.0,female,premium,12.0,13.0,3.0,16.2,True
+100315,United States,38.0,male,basic,33.0,,0.0,8.3,False
+100316,United States,18.0,male,basic,44.0,15.0,,8.81,True
+100317,United Kingdom,25.0,male,family,17.0,18.0,0.0,19.59,False
+100318,United States,38.0,male,premium,9.0,18.0,2.0,16.33,False
+100319,Malaysia,48.0,female,student,6.0,,2.0,6.8,False
+100320,Malaysia,,male,basic,13.0,13.0,2.0,8.95,False
+100321,Singapore,33.0,male,basic,16.0,27.0,1.0,8.9,True
+100322,United States,50.0,male,premium,6.0,20.0,3.0,,False
+100323,Singapore,21.0,female,basic,13.0,10.0,2.0,9.69,False
+100324,Australia,41.0,female,basic,32.0,19.0,2.0,9.32,True
+100325,United Kingdom,39.0,male,student,2.0,18.0,1.0,6.62,False
+100326,Canada,59.0,female,basic,18.0,16.0,1.0,9.09,True
+100327,Singapore,35.0,male,basic,11.0,22.0,0.0,9.48,True
+100328,United Kingdom,36.0,male,premium,17.0,20.0,4.0,16.02,False
+100329,United States,48.0,male,premium,46.0,19.0,2.0,16.77,False
+100330,Canada,22.0,female,premium,16.0,18.0,2.0,17.45,False
+100331,United States,35.0,male,premium,14.0,15.0,0.0,15.93,True
+100332,United Kingdom,33.0,female,family,26.0,15.0,1.0,,True
+100333,Australia,36.0,female,basic,21.0,17.0,,8.5,False
+100334,United States,48.0,male,premium,18.0,14.0,1.0,14.88,False
+100335,United Kingdom,45.0,female,family,21.0,25.0,2.0,20.61,False
+100336,United States,29.0,female,student,38.0,15.0,0.0,6.81,True
+100337,Canada,40.0,female,premium,30.0,13.0,,16.43,False
+100338,United States,56.0,male,premium,14.0,18.0,2.0,16.53,True
+100339,Malaysia,28.0,male,basic,44.0,19.0,1.0,8.45,False
+100340,United States,40.0,female,basic,11.0,,3.0,8.52,True
+100341,Malaysia,36.0,female,basic,18.0,10.0,2.0,9.86,False
+100342,Canada,37.0,male,family,19.0,6.0,3.0,19.95,False
+100343,Singapore,18.0,female,basic,13.0,20.0,2.0,8.66,False
+100344,Canada,55.0,male,family,41.0,13.0,2.0,19.47,False
+100345,Canada,29.0,male,basic,13.0,14.0,2.0,8.92,True
+100346,Malaysia,50.0,male,student,15.0,,0.0,7.74,True
+100347,United States,31.0,male,family,33.0,17.0,2.0,20.33,False
+100348,Singapore,30.0,male,basic,12.0,25.0,6.0,9.08,True
+100349,United States,53.0,male,basic,5.0,,4.0,9.78,False
+100350,United Kingdom,50.0,female,basic,18.0,18.0,,9.69,False
+100351,United States,41.0,female,student,7.0,17.0,0.0,7.16,False
+100352,Singapore,47.0,male,basic,6.0,,2.0,10.38,False
+100353,Singapore,35.0,female,premium,2.0,24.0,0.0,15.87,True
+100354,Singapore,38.0,male,premium,2.0,23.0,1.0,16.54,False
+100355,Singapore,30.0,male,family,3.0,16.0,0.0,19.79,True
+100356,Canada,49.0,male,premium,48.0,22.0,0.0,16.44,False
+100357,Canada,30.0,female,premium,3.0,17.0,3.0,15.87,False
+100358,Singapore,56.0,male,student,7.0,19.0,0.0,7.22,True
+100359,Singapore,34.0,male,basic,15.0,,2.0,10.19,True
+100360,Malaysia,38.0,female,family,26.0,17.0,,20.47,False
+100361,United States,47.0,male,basic,28.0,,,9.23,False
+100362,United States,38.0,male,premium,9.0,20.0,0.0,15.6,False
+100363,United States,34.0,nonbinary,student,18.0,16.0,,7.08,True
+100364,United Kingdom,38.0,male,family,15.0,24.0,0.0,19.49,True
+100365,Singapore,49.0,female,family,17.0,19.0,0.0,20.43,False
+100366,Canada,30.0,female,basic,19.0,12.0,2.0,9.42,False
+100367,United Kingdom,36.0,male,premium,22.0,16.0,3.0,15.9,True
+100368,United States,38.0,female,premium,10.0,14.0,0.0,16.82,False
+100369,Australia,,,premium,13.0,12.0,4.0,16.75,False
+100370,Canada,37.0,female,premium,64.0,26.0,2.0,16.06,True
+100371,United States,60.0,female,basic,11.0,12.0,1.0,9.27,False
+100372,United States,36.0,male,basic,18.0,,2.0,8.7,False
+100373,United States,35.0,female,basic,15.0,,2.0,8.85,True
+100374,United States,36.0,male,premium,17.0,13.0,1.0,15.45,True
+100375,United States,22.0,female,basic,34.0,13.0,2.0,8.75,True
+100376,Malaysia,26.0,male,student,14.0,15.0,1.0,6.94,True
+100377,Singapore,32.0,female,premium,6.0,17.0,0.0,15.16,False
+100378,Singapore,52.0,male,basic,10.0,16.0,2.0,9.28,False
+100379,Canada,38.0,female,family,14.0,20.0,1.0,20.5,True
+100380,Singapore,32.0,male,family,19.0,19.0,1.0,19.99,False
+100381,Malaysia,,female,basic,9.0,18.0,0.0,,True
+100382,Canada,57.0,female,basic,10.0,,0.0,8.86,False
+100383,Singapore,53.0,female,basic,20.0,15.0,,8.29,False
+100384,United States,28.0,male,basic,20.0,18.0,3.0,8.69,False
+100385,Malaysia,32.0,male,family,31.0,16.0,0.0,20.72,True
+100386,United Kingdom,,female,student,10.0,23.0,2.0,5.77,True
+100387,Malaysia,41.0,female,basic,24.0,,,8.58,True
+100388,United States,35.0,male,family,15.0,18.0,2.0,20.4,False
+100389,Australia,47.0,,basic,11.0,17.0,2.0,8.64,True
+100390,United Kingdom,50.0,female,premium,15.0,9.0,1.0,15.6,True
+100391,United States,31.0,male,family,17.0,22.0,2.0,21.01,False
+100392,Singapore,41.0,male,premium,6.0,17.0,0.0,16.18,True
+100393,United Kingdom,49.0,,basic,6.0,,6.0,9.46,True
+100394,United States,24.0,female,premium,26.0,23.0,0.0,16.24,False
+100395,Singapore,38.0,female,student,12.0,22.0,2.0,7.07,False
+100396,Australia,25.0,female,basic,19.0,,2.0,9.62,True
+100397,United States,26.0,male,basic,26.0,9.0,1.0,9.94,False
+100398,Singapore,31.0,female,basic,15.0,12.0,0.0,8.15,True
+100399,Singapore,44.0,male,premium,24.0,18.0,0.0,15.97,True
+100400,United States,34.0,male,premium,17.0,18.0,2.0,15.97,False
+100401,Malaysia,30.0,male,family,18.0,13.0,1.0,19.78,False
+100402,Canada,39.0,,family,36.0,26.0,0.0,20.48,True
+100403,United States,24.0,female,student,14.0,19.0,1.0,7.12,False
+100404,Malaysia,43.0,female,family,26.0,19.0,1.0,20.95,False
+100405,Australia,52.0,male,basic,5.0,20.0,1.0,9.54,False
+100406,United States,37.0,male,premium,19.0,16.0,4.0,16.67,True
+100407,Australia,,female,basic,42.0,12.0,0.0,8.39,False
+100408,United States,42.0,male,basic,67.0,15.0,0.0,8.59,False
+100409,Malaysia,18.0,female,student,5.0,21.0,0.0,6.63,True
+100410,United Kingdom,44.0,female,family,12.0,17.0,0.0,20.65,False
+100411,United Kingdom,75.0,female,student,7.0,29.0,1.0,6.51,True
+100412,United States,37.0,,premium,15.0,18.0,1.0,15.52,False
+100413,Australia,37.0,female,premium,29.0,21.0,1.0,15.43,True
+100414,United States,47.0,female,premium,37.0,17.0,1.0,17.37,False
+100415,United States,58.0,male,basic,38.0,17.0,1.0,8.92,False
+100416,United States,50.0,male,basic,4.0,24.0,2.0,9.25,False
+100417,Canada,18.0,female,premium,17.0,23.0,0.0,15.42,True
+100418,United States,45.0,female,basic,10.0,15.0,0.0,9.47,True
+100419,Malaysia,69.0,male,student,14.0,13.0,2.0,6.1,False
+100420,United Kingdom,45.0,female,basic,11.0,,1.0,8.5,False
+100421,United States,,female,basic,5.0,23.0,1.0,8.62,False
+100422,United States,41.0,male,family,37.0,12.0,3.0,20.1,False
+100423,United States,23.0,female,basic,9.0,18.0,1.0,8.59,False
+100424,United Kingdom,53.0,male,student,10.0,17.0,5.0,7.75,True
+100425,Canada,27.0,female,family,42.0,13.0,0.0,20.24,False
+100426,United States,39.0,,basic,4.0,19.0,1.0,8.65,True
+100427,Australia,28.0,female,family,22.0,13.0,,20.49,False
+100428,United States,31.0,female,premium,32.0,13.0,2.0,15.79,True
+100429,Canada,56.0,female,family,40.0,16.0,4.0,19.69,False
+100430,Malaysia,39.0,female,family,21.0,23.0,0.0,20.44,False
+100431,Canada,,male,family,27.0,18.0,,18.76,True
+100432,United Kingdom,24.0,male,premium,32.0,17.0,3.0,,False
+100433,Australia,18.0,female,basic,15.0,17.0,0.0,8.63,True
+100434,United States,23.0,male,family,8.0,18.0,3.0,19.63,True
+100435,United States,39.0,male,student,44.0,,1.0,7.97,True
+100436,United States,50.0,male,premium,25.0,18.0,2.0,15.72,True
+100437,Singapore,31.0,female,family,17.0,23.0,1.0,20.47,False
+100438,Canada,,female,premium,5.0,26.0,3.0,16.13,False
+100439,United Kingdom,29.0,female,family,1.0,19.0,0.0,20.18,True
+100440,Australia,35.0,female,student,22.0,,1.0,6.86,False
+100441,United States,25.0,female,basic,1.0,20.0,1.0,8.84,True
+100442,Canada,50.0,male,basic,17.0,19.0,0.0,9.75,False
+100443,United States,63.0,male,premium,9.0,20.0,1.0,16.46,True
+100444,United States,18.0,female,premium,11.0,13.0,1.0,15.74,False
+100445,United Kingdom,34.0,female,premium,38.0,17.0,1.0,15.47,False
+100446,Malaysia,,female,basic,9.0,,0.0,8.7,True
+100447,United Kingdom,21.0,male,premium,17.0,21.0,1.0,16.48,True
+100448,United States,45.0,male,premium,9.0,12.0,1.0,16.58,False
+100449,United Kingdom,53.0,female,premium,20.0,14.0,0.0,16.27,False
+100450,United States,39.0,male,family,18.0,12.0,0.0,19.18,True
+100451,Australia,45.0,nonbinary,family,17.0,29.0,1.0,20.37,False
+100452,United Kingdom,59.0,male,premium,32.0,24.0,0.0,16.64,True
+100453,United States,61.0,male,family,4.0,21.0,3.0,20.08,True
+100454,United States,37.0,male,premium,3.0,17.0,1.0,16.98,False
+100455,United States,32.0,female,premium,6.0,21.0,2.0,15.33,False
+100456,Malaysia,27.0,female,premium,18.0,17.0,3.0,16.33,False
+100457,Singapore,50.0,male,basic,23.0,16.0,1.0,8.48,False
+100458,Canada,22.0,female,basic,1.0,14.0,1.0,9.52,True
+100459,United Kingdom,35.0,male,premium,23.0,14.0,1.0,16.3,False
+100460,Singapore,39.0,female,student,13.0,20.0,3.0,7.89,True
+100461,United States,32.0,female,family,45.0,17.0,1.0,20.24,True
+100462,Malaysia,41.0,female,basic,22.0,15.0,,8.79,False
+100463,United States,69.0,nonbinary,premium,42.0,24.0,1.0,15.74,True
+100464,Singapore,37.0,female,basic,37.0,15.0,1.0,8.86,False
+100465,United Kingdom,33.0,female,family,13.0,15.0,0.0,19.73,False
+100466,United Kingdom,50.0,female,family,30.0,22.0,3.0,20.66,True
+100467,Malaysia,41.0,male,premium,13.0,20.0,0.0,16.63,False
+100468,United States,,nonbinary,premium,49.0,17.0,0.0,15.24,False
+100469,Singapore,40.0,female,basic,13.0,18.0,0.0,9.01,False
+100470,Singapore,35.0,male,premium,24.0,19.0,1.0,16.02,False
+100471,Singapore,18.0,female,student,55.0,27.0,1.0,6.6,True
+100472,United States,,male,family,25.0,13.0,1.0,20.21,True
+100473,United States,18.0,female,premium,12.0,19.0,1.0,16.72,True
+100474,United States,43.0,male,premium,5.0,13.0,3.0,16.44,True
+100475,United States,22.0,male,basic,4.0,16.0,2.0,9.66,False
+100476,Singapore,53.0,male,basic,23.0,,1.0,8.63,False
+100477,United Kingdom,38.0,female,basic,15.0,14.0,1.0,9.01,True
+100478,United Kingdom,35.0,male,premium,6.0,20.0,1.0,15.61,False
+100479,Singapore,28.0,nonbinary,student,27.0,25.0,1.0,,False
+100480,Singapore,45.0,female,premium,27.0,10.0,0.0,16.15,True
+100481,United States,28.0,male,basic,15.0,15.0,1.0,9.47,True
+100482,Singapore,26.0,male,basic,43.0,17.0,0.0,9.65,True
+100483,United States,52.0,female,basic,3.0,,0.0,9.33,False
+100484,United States,42.0,male,family,12.0,21.0,0.0,19.56,True
+100485,Singapore,35.0,female,premium,24.0,12.0,2.0,15.31,False
+100486,Singapore,46.0,male,family,7.0,10.0,2.0,20.25,False
+100487,United States,38.0,female,family,29.0,13.0,1.0,20.74,True
+100488,Singapore,43.0,female,basic,35.0,19.0,,8.98,False
+100489,Singapore,28.0,male,premium,1.0,21.0,3.0,15.23,False
+100490,United Kingdom,63.0,male,student,44.0,22.0,0.0,8.03,True
+100491,United Kingdom,31.0,male,premium,23.0,14.0,1.0,16.23,True
+100492,United Kingdom,57.0,nonbinary,basic,11.0,,0.0,9.08,False
+100493,United States,36.0,female,student,4.0,,1.0,6.41,False
+100494,Canada,,female,student,32.0,16.0,0.0,7.0,True
+100495,Singapore,47.0,female,premium,6.0,17.0,2.0,16.33,False
+100496,Singapore,52.0,female,premium,23.0,20.0,1.0,16.24,False
+100497,United Kingdom,28.0,male,basic,6.0,14.0,1.0,8.65,False
+100498,United States,51.0,male,family,16.0,15.0,0.0,19.96,False
+100499,Singapore,60.0,male,premium,31.0,14.0,1.0,15.68,True
+100500,Canada,,female,basic,11.0,20.0,0.0,9.82,True
+100501,Australia,38.0,female,family,44.0,15.0,0.0,20.44,True
+100502,Malaysia,32.0,,student,25.0,,1.0,6.73,False
+100503,Singapore,34.0,female,family,7.0,13.0,2.0,19.41,False
+100504,Singapore,59.0,female,basic,5.0,19.0,3.0,9.13,False
+100505,Canada,,female,basic,8.0,,1.0,8.74,True
+100506,United States,27.0,female,student,16.0,16.0,1.0,6.78,False
+100507,Australia,57.0,female,student,46.0,10.0,,6.42,False
+100508,Singapore,45.0,male,premium,52.0,13.0,1.0,15.48,True
+100509,United States,63.0,female,premium,11.0,12.0,1.0,16.07,False
+100510,United States,,male,premium,10.0,22.0,1.0,15.86,False
+100511,Australia,40.0,male,premium,28.0,21.0,1.0,17.24,True
+100512,United States,30.0,male,basic,28.0,,2.0,9.29,False
+100513,United States,40.0,female,basic,39.0,24.0,,8.41,True
+100514,United States,18.0,female,basic,40.0,14.0,0.0,8.22,False
+100515,United States,46.0,female,family,8.0,16.0,2.0,,True
+100516,United States,42.0,female,basic,4.0,17.0,2.0,,True
+100517,Canada,37.0,female,basic,25.0,,1.0,9.66,True
+100518,United States,33.0,,premium,19.0,16.0,2.0,16.13,True
+100519,Australia,27.0,female,basic,2.0,23.0,1.0,8.0,True
+100520,Australia,,female,basic,4.0,,0.0,8.48,False
+100521,United States,24.0,female,premium,24.0,16.0,0.0,15.65,True
+100522,United States,44.0,male,premium,15.0,22.0,0.0,16.21,False
+100523,United Kingdom,63.0,,premium,25.0,17.0,,15.46,True
+100524,United States,56.0,male,student,6.0,17.0,2.0,7.07,False
+100525,United States,,male,basic,26.0,27.0,1.0,8.32,True
+100526,Malaysia,32.0,male,student,21.0,24.0,,6.99,True
+100527,Malaysia,43.0,male,student,27.0,,0.0,7.18,True
+100528,Canada,37.0,female,family,11.0,16.0,1.0,20.72,False
+100529,United States,21.0,male,premium,9.0,14.0,0.0,16.11,False
+100530,United Kingdom,43.0,male,premium,4.0,19.0,2.0,15.58,True
+100531,United Kingdom,38.0,female,premium,13.0,9.0,2.0,16.74,True
+100532,Singapore,61.0,male,family,34.0,19.0,,19.9,True
+100533,United Kingdom,35.0,male,basic,41.0,20.0,0.0,9.38,False
+100534,United States,52.0,male,student,6.0,14.0,1.0,6.68,True
+100535,United States,23.0,female,premium,16.0,13.0,1.0,16.04,False
+100536,Singapore,26.0,male,family,47.0,20.0,1.0,19.59,False
+100537,United States,,male,premium,51.0,9.0,2.0,16.15,False
+100538,United States,51.0,,basic,12.0,,0.0,9.39,True
+100539,Australia,27.0,female,premium,36.0,17.0,0.0,15.74,True
+100540,Malaysia,38.0,female,premium,32.0,16.0,,15.71,True
+100541,Singapore,21.0,female,premium,30.0,15.0,,16.17,True
+100542,Australia,36.0,nonbinary,basic,3.0,17.0,2.0,8.58,False
+100543,Malaysia,,male,basic,10.0,16.0,1.0,8.23,False
+100544,United States,33.0,female,premium,14.0,14.0,0.0,16.17,True
+100545,Singapore,35.0,female,premium,14.0,23.0,0.0,15.94,True
+100546,Singapore,24.0,nonbinary,student,16.0,19.0,1.0,6.93,False
+100547,United States,30.0,,basic,55.0,,,9.25,True
+100548,Canada,59.0,male,basic,13.0,11.0,4.0,9.32,False
+100549,Singapore,39.0,female,basic,22.0,23.0,0.0,8.91,True
+100550,Singapore,26.0,female,premium,21.0,19.0,1.0,15.43,False
+100551,United States,34.0,male,premium,16.0,12.0,2.0,15.67,True
+100552,United States,19.0,female,premium,6.0,15.0,1.0,16.28,False
+100553,Australia,26.0,male,student,17.0,,1.0,7.06,False
+100554,United States,54.0,female,basic,2.0,21.0,1.0,8.72,True
+100555,United States,36.0,male,family,23.0,14.0,3.0,19.6,True
+100556,United States,61.0,male,basic,1.0,16.0,2.0,9.3,True
+100557,Singapore,37.0,,basic,22.0,17.0,3.0,8.88,False
+100558,Singapore,38.0,female,premium,10.0,19.0,1.0,16.37,True
+100559,Singapore,46.0,male,basic,7.0,18.0,0.0,9.43,False
+100560,United States,18.0,nonbinary,premium,28.0,15.0,1.0,15.83,False
+100561,United States,40.0,female,family,12.0,21.0,0.0,20.46,True
+100562,Australia,37.0,female,family,17.0,19.0,2.0,20.06,False
+100563,United Kingdom,,male,premium,3.0,22.0,1.0,16.12,True
+100564,United Kingdom,50.0,female,premium,43.0,19.0,1.0,14.9,True
+100565,United Kingdom,24.0,male,premium,18.0,15.0,0.0,15.5,False
+100566,Canada,53.0,male,basic,18.0,13.0,6.0,8.53,False
+100567,United States,35.0,female,basic,24.0,16.0,2.0,8.83,False
+100568,United States,27.0,male,family,1.0,13.0,1.0,20.05,False
+100569,Singapore,40.0,male,student,46.0,26.0,2.0,7.07,True
+100570,United States,36.0,female,basic,12.0,23.0,0.0,9.13,True
+100571,Australia,56.0,male,premium,44.0,22.0,0.0,15.65,True
+100572,Singapore,42.0,female,family,12.0,20.0,2.0,20.34,True
+100573,Canada,40.0,female,family,10.0,17.0,3.0,20.89,False
+100574,Australia,49.0,male,premium,23.0,16.0,,15.81,False
+100575,Singapore,51.0,female,premium,62.0,16.0,3.0,15.66,False
+100576,Australia,47.0,male,family,36.0,28.0,1.0,19.65,True
+100577,Singapore,55.0,female,student,24.0,,2.0,7.03,False
+100578,Australia,,male,basic,22.0,23.0,2.0,8.73,False
+100579,United States,40.0,female,student,17.0,16.0,1.0,6.12,False
+100580,Singapore,53.0,male,basic,43.0,,0.0,8.26,False
+100581,Singapore,37.0,,family,29.0,18.0,1.0,20.5,True
+100582,United States,38.0,male,basic,4.0,,1.0,9.63,True
+100583,Singapore,,nonbinary,basic,7.0,20.0,1.0,9.79,False
+100584,Malaysia,57.0,male,basic,25.0,,3.0,9.1,True
+100585,United Kingdom,38.0,male,premium,6.0,16.0,2.0,15.49,False
+100586,United States,33.0,,basic,18.0,16.0,3.0,8.77,False
+100587,United States,56.0,male,basic,30.0,19.0,2.0,8.24,False
+100588,United States,48.0,male,premium,23.0,17.0,2.0,15.23,True
+100589,United States,42.0,male,premium,5.0,14.0,2.0,16.12,False
+100590,Malaysia,34.0,female,family,7.0,17.0,2.0,20.26,True
+100591,Singapore,,male,student,23.0,25.0,1.0,,True
+100592,United States,38.0,male,family,58.0,19.0,1.0,19.95,False
+100593,Singapore,30.0,,basic,15.0,24.0,1.0,8.31,True
+100594,United States,40.0,female,basic,31.0,19.0,0.0,8.93,True
+100595,United States,41.0,nonbinary,student,23.0,21.0,0.0,6.85,False
+100596,United Kingdom,33.0,female,basic,9.0,24.0,1.0,8.74,False
+100597,United Kingdom,49.0,female,premium,31.0,27.0,,16.16,False
+100598,Malaysia,53.0,female,student,3.0,21.0,1.0,6.38,False
+100599,United Kingdom,50.0,female,student,30.0,23.0,0.0,7.06,False
+100600,Singapore,35.0,male,premium,24.0,17.0,1.0,16.32,False
+100601,Canada,47.0,male,family,10.0,14.0,1.0,20.7,True
+100602,Australia,39.0,nonbinary,premium,6.0,20.0,3.0,16.15,True
+100603,Canada,23.0,male,family,11.0,11.0,2.0,20.51,False
+100604,Malaysia,46.0,male,basic,9.0,22.0,1.0,8.77,True
+100605,Canada,40.0,female,basic,13.0,13.0,2.0,8.84,True
+100606,Australia,69.0,male,premium,12.0,16.0,0.0,16.66,False
+100607,United States,55.0,female,basic,10.0,,4.0,8.3,False
+100608,Canada,47.0,female,family,3.0,19.0,1.0,19.79,True
+100609,Singapore,41.0,nonbinary,premium,5.0,19.0,1.0,16.55,True
+100610,Singapore,40.0,male,student,35.0,26.0,1.0,6.88,True
+100611,United Kingdom,26.0,female,family,11.0,22.0,2.0,19.85,False
+100612,Malaysia,18.0,male,premium,13.0,20.0,0.0,15.86,True
+100613,Malaysia,28.0,female,family,12.0,14.0,3.0,20.05,False
+100614,United States,37.0,female,basic,43.0,18.0,,9.53,False
+100615,Canada,18.0,female,premium,9.0,18.0,1.0,16.45,True
+100616,Canada,31.0,female,basic,8.0,13.0,1.0,9.0,True
+100617,United States,35.0,male,student,24.0,16.0,2.0,7.54,False
+100618,United States,35.0,female,family,19.0,18.0,1.0,20.16,False
+100619,United States,,male,student,25.0,17.0,2.0,7.42,True
+100620,Canada,34.0,female,student,24.0,12.0,0.0,6.48,False
+100621,Singapore,59.0,male,student,32.0,14.0,0.0,7.86,True
+100622,Malaysia,46.0,male,basic,5.0,13.0,0.0,9.1,False
+100623,Singapore,31.0,male,student,23.0,,0.0,5.62,True
+100624,Malaysia,37.0,female,premium,8.0,24.0,1.0,16.82,False
+100625,Singapore,38.0,male,premium,2.0,11.0,1.0,15.99,True
+100626,Canada,29.0,male,premium,24.0,12.0,0.0,15.79,True
+100627,United States,29.0,female,basic,23.0,,0.0,8.69,False
+100628,Singapore,50.0,,basic,16.0,27.0,0.0,9.21,True
+100629,Canada,33.0,female,basic,32.0,,1.0,8.55,True
+100630,Malaysia,25.0,female,basic,8.0,20.0,2.0,,False
+100631,Australia,37.0,female,premium,26.0,20.0,0.0,,True
+100632,United States,39.0,female,student,14.0,19.0,2.0,6.84,True
+100633,United States,18.0,female,premium,15.0,18.0,5.0,15.73,False
+100634,United States,38.0,male,premium,2.0,20.0,2.0,16.42,True
+100635,United States,48.0,female,premium,32.0,17.0,1.0,16.13,False
+100636,United Kingdom,43.0,female,premium,22.0,19.0,,16.19,True
+100637,United Kingdom,65.0,male,basic,26.0,17.0,0.0,9.3,True
+100638,Canada,53.0,female,family,7.0,18.0,1.0,19.94,False
+100639,Australia,55.0,female,basic,20.0,27.0,1.0,8.48,True
+100640,Canada,72.0,female,family,14.0,18.0,1.0,20.89,True
+100641,Canada,47.0,female,family,23.0,20.0,0.0,20.45,True
+100642,United States,40.0,female,premium,19.0,19.0,0.0,16.8,False
+100643,United States,50.0,female,student,49.0,23.0,1.0,7.51,True
+100644,United Kingdom,31.0,female,basic,39.0,13.0,2.0,8.76,True
+100645,Australia,39.0,nonbinary,student,13.0,19.0,4.0,5.82,False
+100646,United States,30.0,male,family,23.0,24.0,1.0,19.38,True
+100647,Singapore,43.0,female,family,12.0,15.0,0.0,20.31,True
+100648,United Kingdom,30.0,female,family,32.0,26.0,1.0,19.94,True
+100649,United States,30.0,female,family,15.0,14.0,1.0,19.78,False
+100650,Singapore,43.0,male,student,11.0,17.0,1.0,5.74,True
+100651,Australia,36.0,male,premium,20.0,15.0,0.0,15.98,True
+100652,United Kingdom,18.0,female,family,37.0,20.0,0.0,19.45,True
+100653,United States,21.0,female,family,33.0,20.0,3.0,19.63,False
+100654,Australia,24.0,female,premium,11.0,16.0,3.0,16.42,True
+100655,United States,27.0,male,student,46.0,27.0,1.0,6.48,True
+100656,Australia,43.0,male,premium,8.0,19.0,1.0,15.52,True
+100657,United States,,female,premium,10.0,24.0,2.0,16.08,False
+100658,Singapore,51.0,male,basic,31.0,17.0,1.0,9.43,False
+100659,Singapore,47.0,female,basic,2.0,13.0,2.0,8.79,False
+100660,United States,51.0,male,family,17.0,21.0,2.0,20.72,False
+100661,Australia,45.0,male,premium,13.0,23.0,2.0,15.35,True
+100662,United States,41.0,female,premium,48.0,19.0,1.0,15.26,True
+100663,United States,51.0,female,basic,6.0,13.0,4.0,8.22,False
+100664,United States,49.0,male,premium,7.0,17.0,2.0,15.16,False
+100665,United Kingdom,43.0,female,family,52.0,15.0,0.0,20.16,False
+100666,Canada,53.0,male,student,13.0,15.0,2.0,6.5,False
+100667,Malaysia,18.0,female,basic,36.0,13.0,0.0,8.28,False
+100668,United States,35.0,male,premium,12.0,16.0,1.0,16.18,True
+100669,Singapore,34.0,female,premium,10.0,12.0,1.0,16.4,False
+100670,United States,52.0,female,premium,37.0,19.0,1.0,,False
+100671,Singapore,57.0,female,premium,61.0,11.0,1.0,16.43,True
+100672,Malaysia,21.0,female,premium,39.0,20.0,1.0,15.53,False
+100673,United Kingdom,55.0,female,premium,11.0,18.0,2.0,16.13,False
+100674,Singapore,24.0,male,premium,16.0,15.0,0.0,16.24,False
+100675,Singapore,24.0,female,premium,7.0,15.0,1.0,15.75,False
+100676,Malaysia,35.0,female,premium,9.0,11.0,0.0,16.07,True
+100677,Singapore,34.0,female,family,8.0,16.0,3.0,19.36,False
+100678,United States,19.0,female,family,12.0,17.0,0.0,19.68,True
+100679,United States,46.0,male,basic,18.0,14.0,2.0,9.18,False
+100680,United States,46.0,male,family,17.0,17.0,1.0,20.74,False
+100681,United States,51.0,female,student,28.0,21.0,0.0,7.57,True
+100682,United States,33.0,male,basic,19.0,,,9.32,False
+100683,Singapore,38.0,male,premium,26.0,18.0,,16.03,False
+100684,United Kingdom,,nonbinary,basic,29.0,12.0,2.0,8.95,False
+100685,United States,58.0,female,family,11.0,21.0,2.0,19.27,False
+100686,Singapore,18.0,female,basic,15.0,21.0,0.0,8.57,False
+100687,Malaysia,27.0,female,family,96.0,21.0,3.0,19.59,True
+100688,Canada,38.0,male,basic,10.0,24.0,0.0,9.28,True
+100689,Singapore,25.0,male,premium,27.0,18.0,1.0,16.46,True
+100690,United States,35.0,,student,5.0,15.0,0.0,7.36,False
+100691,Australia,36.0,female,premium,29.0,13.0,,16.58,False
+100692,United States,30.0,male,student,9.0,25.0,2.0,7.03,True
+100693,United States,39.0,male,student,17.0,18.0,2.0,6.5,True
+100694,Australia,46.0,female,student,4.0,17.0,0.0,6.97,True
+100695,Singapore,35.0,male,basic,16.0,17.0,1.0,8.63,False
+100696,Canada,33.0,female,family,16.0,13.0,2.0,20.32,False
+100697,Singapore,36.0,female,basic,14.0,19.0,0.0,8.81,True
+100698,United Kingdom,38.0,male,premium,23.0,16.0,2.0,15.94,False
+100699,United States,18.0,male,student,35.0,18.0,,7.34,False
+100700,United States,44.0,nonbinary,family,7.0,13.0,0.0,19.62,False
+100701,United States,33.0,female,premium,15.0,22.0,1.0,16.47,False
+100702,United States,53.0,female,premium,3.0,20.0,1.0,15.32,True
+100703,Australia,45.0,female,family,19.0,18.0,1.0,20.14,True
+100704,United States,52.0,,family,7.0,18.0,0.0,19.94,True
+100705,Singapore,26.0,female,premium,17.0,21.0,3.0,16.4,False
+100706,Canada,34.0,female,student,19.0,24.0,1.0,6.3,True
+100707,Canada,23.0,female,basic,3.0,13.0,2.0,8.22,True
+100708,Singapore,30.0,,basic,22.0,16.0,0.0,9.37,True
+100709,Singapore,53.0,,premium,34.0,17.0,0.0,15.79,True
+100710,Malaysia,56.0,male,student,25.0,16.0,,6.94,True
+100711,United Kingdom,24.0,female,basic,7.0,20.0,1.0,8.66,False
+100712,Canada,33.0,male,basic,16.0,17.0,1.0,9.45,True
+100713,Australia,37.0,male,basic,17.0,17.0,0.0,9.14,True
+100714,Canada,45.0,,student,15.0,,0.0,7.11,True
+100715,United States,18.0,female,basic,5.0,24.0,0.0,8.41,True
+100716,Singapore,19.0,female,premium,8.0,10.0,1.0,,False
+100717,United States,44.0,male,student,14.0,16.0,4.0,6.49,True
+100718,United Kingdom,18.0,male,basic,19.0,21.0,,8.66,False
+100719,Malaysia,33.0,female,premium,10.0,20.0,1.0,15.31,True
+100720,Singapore,40.0,female,premium,2.0,17.0,2.0,15.91,False
+100721,Singapore,43.0,male,family,11.0,21.0,0.0,20.52,False
+100722,United States,36.0,female,premium,49.0,23.0,0.0,16.1,True
+100723,Malaysia,34.0,male,premium,22.0,19.0,0.0,15.77,True
+100724,United States,48.0,female,basic,19.0,22.0,1.0,9.04,True
+100725,United States,41.0,female,family,8.0,23.0,2.0,20.04,False
+100726,United States,30.0,male,family,11.0,22.0,3.0,20.02,False
+100727,United States,,female,basic,2.0,21.0,1.0,9.08,False
+100728,Singapore,43.0,male,premium,8.0,22.0,3.0,15.47,False
+100729,Singapore,,,student,21.0,27.0,2.0,7.04,True
+100730,United States,47.0,female,basic,19.0,24.0,,8.11,True
+100731,United States,53.0,male,basic,10.0,14.0,0.0,9.28,False
+100732,United States,31.0,female,premium,15.0,21.0,2.0,15.44,True
+100733,Singapore,32.0,female,basic,17.0,26.0,1.0,9.58,False
+100734,United States,35.0,male,basic,10.0,,3.0,7.77,False
+100735,United Kingdom,36.0,male,premium,23.0,17.0,,,False
+100736,United States,26.0,male,basic,19.0,,1.0,8.17,False
+100737,United States,53.0,female,premium,12.0,22.0,1.0,15.39,True
+100738,Singapore,49.0,female,family,5.0,19.0,2.0,20.14,True
+100739,Singapore,34.0,male,premium,11.0,22.0,1.0,16.3,False
+100740,United States,46.0,female,basic,10.0,,1.0,8.85,True
+100741,United States,,female,family,9.0,21.0,3.0,20.44,True
+100742,Australia,47.0,male,basic,3.0,19.0,0.0,8.59,True
+100743,United States,22.0,female,family,41.0,16.0,1.0,19.79,True
+100744,Singapore,36.0,female,premium,39.0,15.0,2.0,15.84,True
+100745,Singapore,37.0,female,family,14.0,15.0,2.0,19.72,True
+100746,United States,45.0,female,basic,19.0,19.0,2.0,8.02,False
+100747,Singapore,30.0,male,basic,22.0,20.0,3.0,8.98,False
+100748,Canada,18.0,male,premium,15.0,24.0,0.0,15.93,True
+100749,Australia,25.0,female,basic,20.0,22.0,1.0,9.53,True
+100750,United States,37.0,female,basic,25.0,,0.0,8.35,True
+100751,United States,39.0,male,family,18.0,16.0,1.0,19.67,True
+100752,United States,58.0,female,family,28.0,21.0,2.0,20.59,True
+100753,Singapore,45.0,male,basic,9.0,21.0,1.0,9.14,True
+100754,United Kingdom,39.0,male,student,16.0,19.0,0.0,7.26,True
+100755,United States,38.0,male,family,81.0,18.0,1.0,20.22,False
+100756,United States,51.0,female,student,32.0,21.0,1.0,7.22,True
+100757,Malaysia,31.0,nonbinary,family,18.0,17.0,1.0,20.9,False
+100758,United States,36.0,female,family,7.0,14.0,1.0,20.04,False
+100759,Singapore,,male,premium,16.0,19.0,1.0,15.48,True
+100760,United Kingdom,55.0,male,family,31.0,25.0,,20.31,False
+100761,United States,43.0,male,student,27.0,,,6.71,True
+100762,United States,30.0,male,basic,3.0,,2.0,8.94,False
+100763,United States,37.0,male,basic,4.0,,4.0,9.18,True
+100764,Malaysia,44.0,female,basic,4.0,17.0,0.0,8.58,False
+100765,United States,,female,student,23.0,15.0,2.0,6.73,True
+100766,United States,32.0,male,premium,4.0,27.0,0.0,16.23,True
+100767,United States,30.0,male,family,7.0,17.0,0.0,19.72,True
+100768,United States,42.0,female,family,14.0,18.0,0.0,20.48,True
+100769,United Kingdom,34.0,male,student,34.0,,1.0,6.5,True
+100770,United States,33.0,male,basic,23.0,13.0,2.0,8.5,False
+100771,Singapore,22.0,female,family,13.0,21.0,1.0,20.94,True
+100772,Singapore,39.0,female,student,28.0,17.0,1.0,6.22,True
+100773,Australia,36.0,female,basic,59.0,20.0,0.0,8.98,True
+100774,United States,34.0,female,family,17.0,21.0,2.0,20.92,True
+100775,Australia,40.0,female,premium,5.0,18.0,1.0,15.98,False
+100776,United Kingdom,47.0,female,premium,7.0,17.0,0.0,16.66,False
+100777,United States,,female,premium,7.0,15.0,0.0,16.32,False
+100778,Canada,45.0,female,basic,8.0,17.0,3.0,8.99,False
+100779,Australia,35.0,male,basic,12.0,18.0,3.0,8.92,False
+100780,United States,31.0,female,basic,20.0,16.0,2.0,7.93,True
+100781,Malaysia,25.0,nonbinary,basic,4.0,,1.0,8.83,True
+100782,Singapore,31.0,male,premium,5.0,18.0,2.0,16.11,True
+100783,United Kingdom,38.0,male,premium,24.0,18.0,1.0,16.11,False
+100784,Malaysia,29.0,nonbinary,basic,10.0,26.0,2.0,10.22,True
+100785,United States,39.0,male,family,8.0,22.0,0.0,20.13,False
+100786,Canada,26.0,female,family,13.0,26.0,3.0,20.31,False
+100787,United States,18.0,male,premium,39.0,11.0,1.0,16.57,False
+100788,Canada,48.0,female,student,27.0,,2.0,7.26,True
+100789,United Kingdom,32.0,male,premium,26.0,22.0,0.0,15.95,True
+100790,United States,28.0,male,family,48.0,16.0,,19.95,False
+100791,Singapore,25.0,female,basic,20.0,,0.0,8.81,False
+100792,United States,43.0,female,family,51.0,18.0,0.0,20.21,True
+100793,United States,54.0,male,student,53.0,17.0,1.0,6.9,False
+100794,United States,33.0,female,family,4.0,23.0,3.0,20.3,True
+100795,United States,35.0,female,premium,3.0,20.0,1.0,15.49,True
+100796,United States,51.0,female,premium,7.0,18.0,1.0,16.06,True
+100797,United States,18.0,female,premium,36.0,17.0,0.0,16.77,True
+100798,Canada,62.0,male,family,13.0,16.0,0.0,19.88,False
+100799,United Kingdom,67.0,male,family,12.0,25.0,1.0,20.91,True
+100800,Canada,18.0,female,student,29.0,23.0,0.0,7.07,True
+100801,United States,37.0,female,premium,10.0,21.0,1.0,15.96,False
+100802,Australia,29.0,female,basic,18.0,15.0,1.0,9.05,True
+100803,Singapore,35.0,female,premium,24.0,18.0,,15.83,False
+100804,United States,33.0,male,basic,7.0,20.0,0.0,8.0,True
+100805,United States,48.0,male,basic,6.0,19.0,2.0,9.43,True
+100806,United Kingdom,37.0,female,basic,16.0,16.0,1.0,10.09,True
+100807,United States,27.0,male,family,18.0,20.0,0.0,20.23,True
+100808,Singapore,36.0,female,basic,27.0,15.0,1.0,,True
+100809,Malaysia,44.0,male,basic,6.0,,2.0,8.9,False
+100810,United States,24.0,male,basic,9.0,17.0,2.0,9.57,True
+100811,United States,18.0,,student,53.0,18.0,,6.97,True
+100812,Malaysia,62.0,male,family,32.0,23.0,,20.12,True
+100813,Singapore,,male,basic,14.0,11.0,3.0,8.21,True
+100814,United States,36.0,female,basic,35.0,19.0,,8.73,False
+100815,Australia,33.0,female,premium,6.0,18.0,1.0,16.17,False
+100816,Australia,45.0,female,basic,13.0,23.0,2.0,9.44,True
+100817,Singapore,,male,premium,18.0,19.0,0.0,16.46,True
+100818,United Kingdom,45.0,male,premium,12.0,14.0,2.0,15.2,True
+100819,United States,20.0,male,student,12.0,19.0,0.0,6.25,True
+100820,United States,21.0,male,basic,26.0,17.0,0.0,9.28,False
+100821,Singapore,33.0,female,family,32.0,18.0,2.0,19.62,False
+100822,United States,35.0,male,basic,11.0,,2.0,9.44,False
+100823,United Kingdom,18.0,male,student,5.0,25.0,0.0,6.17,True
+100824,Australia,48.0,female,student,4.0,16.0,0.0,6.94,True
+100825,United States,25.0,female,family,2.0,24.0,0.0,,False
+100826,Singapore,,female,premium,47.0,14.0,3.0,16.23,False
+100827,United States,60.0,female,basic,26.0,26.0,3.0,8.47,True
+100828,Australia,35.0,male,family,22.0,18.0,0.0,19.01,True
+100829,United States,43.0,male,family,10.0,24.0,2.0,20.08,False
+100830,United Kingdom,23.0,male,basic,10.0,8.0,1.0,9.25,False
+100831,Singapore,45.0,,premium,33.0,22.0,1.0,,True
+100832,Singapore,32.0,male,premium,3.0,11.0,2.0,15.81,False
+100833,United Kingdom,25.0,male,family,11.0,16.0,1.0,20.38,True
+100834,Canada,35.0,female,family,36.0,24.0,1.0,20.23,False
+100835,Singapore,32.0,,premium,11.0,21.0,2.0,16.65,False
+100836,Canada,34.0,female,premium,25.0,17.0,,15.96,False
+100837,Malaysia,,female,basic,15.0,22.0,1.0,8.13,True
+100838,Singapore,29.0,female,premium,1.0,25.0,2.0,15.96,False
+100839,Singapore,59.0,female,basic,14.0,22.0,2.0,9.03,True
+100840,United States,22.0,,family,17.0,14.0,3.0,20.25,False
+100841,Canada,,female,premium,14.0,27.0,4.0,15.22,False
+100842,Singapore,26.0,female,premium,5.0,20.0,0.0,15.83,True
+100843,Singapore,38.0,female,basic,14.0,9.0,2.0,9.42,True
+100844,United States,32.0,female,basic,2.0,,1.0,8.94,False
+100845,Australia,34.0,female,premium,11.0,16.0,0.0,15.84,False
+100846,Singapore,48.0,female,basic,27.0,19.0,1.0,9.94,True
+100847,United Kingdom,56.0,male,basic,46.0,21.0,1.0,8.45,False
+100848,United States,52.0,female,family,41.0,21.0,2.0,20.61,True
+100849,Malaysia,33.0,male,premium,6.0,17.0,2.0,16.5,True
+100850,United States,40.0,female,premium,4.0,18.0,0.0,15.88,False
+100851,United States,29.0,male,premium,18.0,14.0,1.0,15.97,False
+100852,Australia,26.0,male,family,16.0,20.0,1.0,19.97,True
+100853,Malaysia,24.0,female,basic,24.0,20.0,1.0,9.08,False
+100854,United States,33.0,female,family,9.0,25.0,0.0,19.69,True
+100855,Singapore,41.0,male,student,16.0,,0.0,6.78,False
+100856,Canada,,female,family,16.0,20.0,1.0,19.81,True
+100857,Australia,37.0,male,premium,12.0,20.0,1.0,15.83,True
+100858,United States,56.0,female,family,3.0,17.0,0.0,19.83,True
+100859,Singapore,51.0,female,premium,27.0,21.0,2.0,14.87,False
+100860,Canada,31.0,male,premium,18.0,18.0,0.0,16.04,True
+100861,Canada,21.0,male,premium,28.0,19.0,0.0,15.73,True
+100862,Canada,44.0,female,basic,33.0,,1.0,8.06,False
+100863,Singapore,18.0,male,basic,15.0,,1.0,8.81,True
+100864,United States,51.0,male,premium,27.0,19.0,,15.8,True
+100865,Australia,35.0,female,basic,46.0,,1.0,9.63,False
+100866,Australia,60.0,female,premium,57.0,12.0,1.0,15.72,True
+100867,Canada,18.0,female,premium,20.0,11.0,1.0,16.32,False
+100868,United States,49.0,female,student,21.0,28.0,1.0,7.68,False
+100869,United States,37.0,male,basic,20.0,20.0,0.0,8.68,False
+100870,Canada,34.0,female,premium,24.0,26.0,1.0,15.97,True
+100871,United States,22.0,female,premium,32.0,17.0,0.0,16.85,False
+100872,Malaysia,45.0,male,basic,19.0,22.0,0.0,9.1,False
+100873,United States,46.0,male,basic,54.0,28.0,1.0,9.18,True
+100874,United Kingdom,59.0,male,basic,49.0,19.0,3.0,,True
+100875,Australia,50.0,male,basic,17.0,19.0,3.0,9.33,False
+100876,Singapore,31.0,female,basic,17.0,19.0,3.0,8.97,True
+100877,United States,,male,premium,11.0,23.0,4.0,15.07,True
+100878,United Kingdom,22.0,female,premium,24.0,17.0,1.0,15.81,True
+100879,Singapore,56.0,female,basic,12.0,15.0,1.0,8.4,True
+100880,Singapore,29.0,,basic,10.0,30.0,0.0,9.05,False
+100881,United Kingdom,56.0,male,basic,24.0,14.0,4.0,8.53,False
+100882,Malaysia,44.0,male,premium,6.0,10.0,0.0,16.23,False
+100883,Singapore,42.0,female,basic,32.0,10.0,1.0,9.01,False
+100884,United States,34.0,male,premium,25.0,17.0,1.0,15.37,True
+100885,United States,46.0,male,basic,48.0,16.0,0.0,8.74,False
+100886,Singapore,38.0,female,basic,20.0,,2.0,9.3,False
+100887,United States,34.0,male,student,28.0,17.0,2.0,7.56,True
+100888,United States,46.0,female,basic,30.0,16.0,2.0,8.54,True
+100889,United Kingdom,36.0,nonbinary,basic,38.0,19.0,1.0,8.44,True
+100890,United States,28.0,female,basic,18.0,26.0,0.0,9.97,True
+100891,Malaysia,45.0,female,student,11.0,12.0,1.0,6.99,True
+100892,United States,37.0,female,premium,20.0,13.0,1.0,,False
+100893,United States,44.0,female,premium,32.0,15.0,2.0,15.62,False
+100894,Canada,33.0,male,student,35.0,20.0,2.0,7.1,False
+100895,Australia,23.0,male,basic,3.0,26.0,3.0,9.85,False
+100896,United States,59.0,female,student,89.0,13.0,,,True
+100897,United States,57.0,male,basic,10.0,15.0,3.0,9.52,False
+100898,United States,49.0,male,premium,28.0,25.0,2.0,,False
+100899,Singapore,33.0,male,premium,41.0,19.0,,15.48,False
+100900,Singapore,,male,premium,16.0,21.0,1.0,15.65,True
+100901,United States,,female,student,36.0,18.0,1.0,6.43,False
+100902,United States,34.0,female,basic,3.0,,1.0,9.1,False
+100903,Singapore,30.0,male,student,37.0,20.0,2.0,7.6,False
+100904,Malaysia,60.0,male,premium,34.0,17.0,2.0,16.07,False
+100905,United Kingdom,37.0,male,premium,22.0,21.0,4.0,15.84,True
+100906,Singapore,59.0,male,student,32.0,,,6.6,False
+100907,United States,21.0,female,basic,50.0,14.0,0.0,9.17,False
+100908,United States,44.0,male,student,42.0,12.0,1.0,6.37,True
+100909,United States,63.0,female,premium,16.0,24.0,1.0,15.42,True
+100910,Canada,38.0,female,family,20.0,15.0,0.0,20.44,True
+100911,Australia,35.0,female,basic,14.0,16.0,1.0,8.85,True
+100912,Australia,24.0,female,premium,13.0,16.0,0.0,15.84,False
+100913,Malaysia,51.0,male,family,30.0,11.0,3.0,19.91,False
+100914,Malaysia,29.0,female,premium,14.0,23.0,1.0,16.35,False
+100915,Malaysia,37.0,male,basic,30.0,17.0,1.0,9.07,False
+100916,United States,23.0,male,basic,16.0,25.0,1.0,8.62,False
+100917,United States,57.0,male,student,17.0,17.0,4.0,6.64,False
+100918,United States,52.0,male,basic,8.0,14.0,0.0,8.89,False
+100919,Singapore,38.0,female,family,29.0,12.0,0.0,20.14,False
+100920,United States,,female,student,3.0,17.0,2.0,6.97,False
+100921,Australia,56.0,female,basic,38.0,16.0,1.0,8.93,True
+100922,United Kingdom,34.0,female,basic,69.0,13.0,,9.01,True
+100923,Singapore,25.0,male,family,18.0,16.0,0.0,19.97,False
+100924,United States,18.0,female,basic,17.0,14.0,0.0,8.6,True
+100925,United States,30.0,female,premium,4.0,12.0,1.0,16.54,True
+100926,United States,,female,family,11.0,19.0,1.0,19.75,True
+100927,Australia,31.0,male,premium,33.0,21.0,1.0,16.05,True
+100928,Singapore,47.0,male,premium,36.0,19.0,1.0,14.96,False
+100929,Canada,33.0,female,family,20.0,11.0,0.0,19.88,False
+100930,United States,42.0,male,premium,31.0,21.0,,15.44,False
+100931,United States,29.0,male,basic,8.0,15.0,0.0,8.5,False
+100932,Singapore,39.0,male,premium,23.0,19.0,0.0,17.2,True
+100933,Canada,61.0,female,student,45.0,20.0,0.0,7.11,True
+100934,Canada,34.0,male,family,26.0,20.0,1.0,20.6,False
+100935,United States,43.0,female,premium,50.0,22.0,0.0,16.42,True
+100936,Malaysia,19.0,female,basic,51.0,12.0,0.0,9.48,False
+100937,United States,56.0,male,basic,24.0,16.0,0.0,8.89,True
+100938,Australia,,male,basic,1.0,13.0,1.0,9.79,False
+100939,United States,51.0,female,basic,35.0,,1.0,9.41,True
+100940,United States,37.0,male,student,5.0,17.0,2.0,7.01,False
+100941,Australia,45.0,female,basic,1.0,,0.0,9.12,True
+100942,United States,46.0,male,family,2.0,23.0,2.0,19.92,True
+100943,Singapore,33.0,nonbinary,basic,37.0,18.0,0.0,9.02,True
+100944,Singapore,51.0,male,basic,24.0,15.0,0.0,8.97,True
+100945,United States,29.0,male,premium,20.0,15.0,0.0,16.18,True
+100946,United Kingdom,47.0,male,basic,26.0,18.0,,9.86,False
+100947,Australia,33.0,male,family,2.0,12.0,0.0,19.39,False
+100948,Australia,42.0,,student,14.0,,0.0,7.56,True
+100949,United States,32.0,male,student,10.0,,0.0,6.81,True
+100950,Singapore,39.0,female,basic,19.0,,1.0,9.62,True
+100951,United States,25.0,male,family,19.0,20.0,6.0,19.82,True
+100952,United States,41.0,female,basic,25.0,19.0,,9.2,False
+100953,United States,39.0,nonbinary,student,28.0,19.0,0.0,6.91,False
+100954,Malaysia,32.0,female,premium,3.0,11.0,2.0,15.12,False
+100955,Australia,37.0,female,basic,14.0,15.0,3.0,9.86,True
+100956,Canada,40.0,male,basic,17.0,14.0,0.0,8.52,True
+100957,Singapore,31.0,female,basic,5.0,29.0,1.0,9.03,False
+100958,Singapore,36.0,female,basic,5.0,14.0,1.0,8.46,True
+100959,Singapore,26.0,male,student,4.0,14.0,0.0,6.32,False
+100960,Singapore,66.0,female,family,31.0,19.0,1.0,19.89,False
+100961,Singapore,51.0,female,student,3.0,25.0,2.0,6.69,False
+100962,United States,41.0,male,basic,4.0,19.0,1.0,8.41,False
+100963,United States,52.0,female,premium,18.0,10.0,,15.97,False
+100964,Malaysia,18.0,female,basic,23.0,18.0,4.0,8.25,True
+100965,Singapore,18.0,,premium,17.0,11.0,1.0,16.05,True
+100966,Malaysia,33.0,female,basic,6.0,15.0,5.0,8.93,False
+100967,United States,,female,basic,5.0,17.0,2.0,7.75,True
+100968,Singapore,35.0,female,premium,18.0,19.0,2.0,15.73,False
+100969,United States,40.0,male,basic,15.0,13.0,2.0,9.22,False
+100970,United States,49.0,male,premium,12.0,18.0,0.0,,False
+100971,United States,24.0,female,family,30.0,21.0,1.0,20.25,True
+100972,United States,43.0,female,basic,14.0,20.0,1.0,9.21,False
+100973,Malaysia,38.0,male,student,4.0,,0.0,6.48,True
+100974,United States,42.0,male,premium,12.0,18.0,0.0,15.98,True
+100975,United Kingdom,32.0,,family,25.0,20.0,,20.4,True
+100976,Singapore,55.0,female,family,14.0,12.0,0.0,19.55,False
+100977,Singapore,37.0,,family,25.0,22.0,0.0,19.89,True
+100978,Singapore,59.0,male,family,28.0,18.0,1.0,20.57,False
+100979,United States,,male,student,14.0,22.0,3.0,6.56,False
+100980,Malaysia,47.0,male,premium,16.0,21.0,3.0,16.22,True
+100981,Canada,37.0,female,basic,13.0,20.0,1.0,8.45,False
+100982,Canada,34.0,female,basic,25.0,12.0,3.0,8.91,True
+100983,Singapore,46.0,female,premium,13.0,14.0,2.0,16.21,True
+100984,United States,34.0,female,basic,23.0,18.0,0.0,7.79,True
+100985,Malaysia,18.0,female,basic,20.0,,2.0,8.72,False
+100986,United States,18.0,male,basic,2.0,16.0,1.0,9.2,False
+100987,United States,53.0,female,premium,24.0,22.0,1.0,16.1,False
+100988,United States,53.0,male,basic,18.0,,1.0,8.73,True
+100989,Canada,61.0,female,premium,39.0,17.0,,15.44,False
+100990,United Kingdom,38.0,female,family,5.0,19.0,1.0,,True
+100991,Canada,22.0,male,family,20.0,21.0,,19.83,True
+100992,Canada,33.0,male,basic,11.0,21.0,3.0,9.26,False
+100993,United States,,female,premium,3.0,14.0,2.0,16.18,True
+100994,Malaysia,26.0,male,premium,2.0,13.0,3.0,15.77,False
+100995,Singapore,58.0,female,premium,45.0,21.0,1.0,16.53,False
+100996,United Kingdom,65.0,female,family,20.0,16.0,,19.69,False
+100997,United States,44.0,female,basic,14.0,20.0,2.0,9.59,True
+100998,Malaysia,38.0,female,student,4.0,20.0,1.0,7.65,True
+100999,United States,,male,basic,43.0,15.0,5.0,9.52,False
+101000,United States,57.0,female,family,9.0,24.0,2.0,19.9,False
+101001,Singapore,39.0,male,premium,21.0,19.0,2.0,17.26,False
+101002,United States,35.0,male,basic,18.0,17.0,1.0,9.07,True
+101003,United States,44.0,female,family,57.0,11.0,3.0,20.11,False
+101004,United Kingdom,31.0,female,basic,16.0,16.0,0.0,8.98,True
+101005,Singapore,40.0,female,family,11.0,20.0,0.0,19.43,True
+101006,Malaysia,21.0,male,premium,20.0,22.0,0.0,16.64,True
+101007,United States,51.0,male,basic,22.0,12.0,0.0,8.7,True
+101008,Canada,37.0,male,basic,84.0,17.0,1.0,9.45,True
+101009,Singapore,52.0,female,family,16.0,18.0,0.0,20.57,True
+101010,United Kingdom,36.0,female,basic,5.0,28.0,1.0,9.29,True
+101011,Singapore,36.0,male,student,12.0,19.0,0.0,6.64,False
+101012,Singapore,23.0,female,family,20.0,12.0,,19.82,False
+101013,Malaysia,47.0,male,family,23.0,23.0,,18.65,False
+101014,United States,27.0,female,basic,3.0,26.0,2.0,8.93,True
+101015,United States,32.0,female,family,11.0,17.0,2.0,20.39,False
+101016,United Kingdom,38.0,male,student,55.0,14.0,0.0,6.87,False
+101017,Australia,39.0,male,basic,7.0,,2.0,8.69,False
+101018,United States,18.0,male,basic,31.0,21.0,0.0,8.84,True
+101019,Singapore,35.0,female,basic,12.0,22.0,1.0,9.6,False
+101020,Australia,48.0,male,premium,17.0,17.0,2.0,15.96,False
+101021,Canada,33.0,male,family,4.0,19.0,1.0,20.92,True
+101022,Malaysia,35.0,male,premium,14.0,14.0,1.0,15.7,True
+101023,Singapore,40.0,male,premium,20.0,16.0,0.0,16.1,False
+101024,United Kingdom,36.0,male,basic,16.0,18.0,2.0,8.77,True
+101025,United States,26.0,male,basic,14.0,13.0,0.0,10.03,True
+101026,Malaysia,38.0,female,basic,25.0,,2.0,9.08,False
+101027,United States,50.0,female,student,5.0,20.0,2.0,8.05,True
+101028,Canada,25.0,male,premium,21.0,18.0,3.0,15.78,False
+101029,Singapore,34.0,female,premium,2.0,24.0,3.0,16.75,False
+101030,Singapore,21.0,female,family,37.0,21.0,1.0,20.05,True
+101031,United Kingdom,49.0,male,basic,15.0,13.0,1.0,9.41,False
+101032,Singapore,37.0,female,basic,29.0,18.0,1.0,8.38,True
+101033,Australia,28.0,male,basic,1.0,27.0,2.0,9.16,False
+101034,Singapore,39.0,male,student,26.0,21.0,3.0,6.46,False
+101035,United Kingdom,24.0,female,family,8.0,20.0,2.0,20.12,False
+101036,United States,26.0,male,premium,17.0,21.0,1.0,15.23,True
+101037,Singapore,20.0,female,basic,27.0,16.0,1.0,8.94,True
+101038,Singapore,25.0,male,basic,16.0,,1.0,9.54,False
+101039,United States,54.0,male,premium,24.0,22.0,0.0,16.26,True
+101040,United States,29.0,female,premium,13.0,26.0,0.0,15.37,False
+101041,United Kingdom,44.0,female,student,39.0,16.0,,6.04,True
+101042,United Kingdom,28.0,female,family,15.0,14.0,2.0,20.24,False
+101043,United Kingdom,47.0,female,premium,15.0,16.0,1.0,16.78,False
+101044,United States,26.0,female,family,15.0,15.0,2.0,19.51,False
+101045,United States,,nonbinary,student,16.0,16.0,0.0,8.04,False
+101046,United States,39.0,female,premium,5.0,19.0,2.0,15.99,True
+101047,Canada,66.0,male,premium,7.0,14.0,0.0,15.01,True
+101048,Australia,46.0,female,student,32.0,10.0,4.0,6.21,False
+101049,United States,31.0,nonbinary,basic,29.0,,1.0,9.37,False
+101050,United Kingdom,46.0,female,student,28.0,,0.0,7.05,True
+101051,United States,64.0,female,basic,23.0,17.0,1.0,9.73,False
+101052,United States,18.0,male,premium,11.0,23.0,2.0,15.39,False
+101053,United States,,female,family,10.0,22.0,0.0,20.05,True
+101054,United States,35.0,male,premium,16.0,25.0,2.0,15.99,False
+101055,United Kingdom,33.0,female,premium,36.0,19.0,1.0,15.92,True
+101056,Malaysia,34.0,male,premium,19.0,19.0,1.0,15.8,False
+101057,United States,22.0,male,basic,7.0,12.0,1.0,8.81,True
+101058,Singapore,55.0,male,basic,4.0,18.0,0.0,9.08,False
+101059,United Kingdom,21.0,female,basic,30.0,17.0,0.0,9.14,False
+101060,Malaysia,36.0,female,premium,44.0,18.0,0.0,16.12,True
+101061,United Kingdom,51.0,female,premium,3.0,23.0,2.0,16.59,True
+101062,United States,38.0,female,basic,31.0,15.0,0.0,8.39,True
+101063,United Kingdom,26.0,female,student,22.0,19.0,1.0,6.08,False
+101064,United States,22.0,male,premium,8.0,18.0,1.0,16.5,True
+101065,Malaysia,35.0,male,premium,19.0,19.0,,15.52,False
+101066,Singapore,29.0,male,premium,6.0,26.0,6.0,15.8,False
+101067,United Kingdom,40.0,female,basic,14.0,,0.0,8.68,False
+101068,United States,21.0,female,family,17.0,11.0,2.0,19.67,True
+101069,Singapore,48.0,male,premium,39.0,18.0,0.0,15.26,False
+101070,Australia,39.0,female,basic,13.0,16.0,0.0,8.71,False
+101071,United Kingdom,40.0,female,student,9.0,18.0,1.0,7.31,True
+101072,Singapore,55.0,female,family,21.0,23.0,0.0,19.99,True
+101073,Malaysia,33.0,male,family,25.0,17.0,,20.24,False
+101074,Australia,29.0,nonbinary,student,9.0,17.0,1.0,6.74,True
+101075,United States,31.0,female,student,6.0,24.0,0.0,,False
+101076,Singapore,36.0,male,basic,7.0,,1.0,8.74,False
+101077,Singapore,37.0,female,premium,39.0,19.0,0.0,14.94,False
+101078,United Kingdom,28.0,female,premium,24.0,18.0,1.0,16.15,True
+101079,United States,18.0,male,basic,12.0,10.0,0.0,9.37,True
+101080,United States,31.0,female,basic,34.0,,2.0,8.71,False
+101081,Malaysia,42.0,male,basic,9.0,7.0,0.0,9.59,False
+101082,Malaysia,40.0,female,family,15.0,14.0,1.0,19.56,False
+101083,Australia,52.0,female,family,6.0,15.0,3.0,20.33,True
+101084,Malaysia,61.0,male,family,33.0,19.0,0.0,20.86,True
+101085,Canada,47.0,,basic,8.0,20.0,3.0,9.01,True
+101086,Canada,55.0,male,basic,8.0,23.0,0.0,8.88,True
+101087,Canada,47.0,female,premium,22.0,19.0,0.0,15.94,True
+101088,Singapore,59.0,male,premium,1.0,14.0,2.0,16.8,True
+101089,Singapore,60.0,female,student,4.0,14.0,1.0,7.19,True
+101090,United States,49.0,female,student,27.0,,2.0,,False
+101091,United Kingdom,46.0,male,student,7.0,13.0,3.0,7.13,False
+101092,United States,36.0,female,student,69.0,17.0,0.0,6.66,False
+101093,United States,38.0,female,student,18.0,18.0,0.0,6.7,False
+101094,Singapore,34.0,nonbinary,premium,3.0,24.0,0.0,16.02,False
+101095,Singapore,45.0,male,basic,45.0,,,7.97,False
+101096,United States,29.0,male,basic,18.0,25.0,3.0,8.75,True
+101097,Canada,36.0,male,premium,14.0,11.0,0.0,15.76,False
+101098,Australia,18.0,male,basic,18.0,22.0,4.0,9.11,False
+101099,United States,59.0,male,basic,3.0,,1.0,9.96,True
+101100,United States,35.0,male,student,16.0,23.0,1.0,7.02,True
+101101,United States,,female,basic,7.0,17.0,0.0,8.03,False
+101102,Canada,55.0,female,student,15.0,10.0,0.0,6.53,False
+101103,Australia,42.0,male,family,11.0,23.0,2.0,20.12,False
+101104,United States,55.0,male,premium,18.0,11.0,1.0,16.04,True
+101105,Canada,23.0,female,family,12.0,16.0,1.0,20.8,False
+101106,United States,67.0,female,basic,10.0,20.0,2.0,9.47,True
+101107,Singapore,51.0,female,premium,7.0,17.0,2.0,16.46,False
+101108,Malaysia,41.0,male,basic,3.0,15.0,1.0,8.88,True
+101109,United States,55.0,male,student,2.0,19.0,2.0,7.54,False
+101110,United States,24.0,female,basic,5.0,22.0,1.0,8.54,True
+101111,Singapore,35.0,male,basic,26.0,,1.0,9.47,False
+101112,United Kingdom,55.0,male,family,6.0,18.0,1.0,19.85,False
+101113,Malaysia,,male,family,9.0,16.0,0.0,19.27,True
+101114,Malaysia,45.0,female,premium,9.0,12.0,0.0,16.29,True
+101115,United States,44.0,male,premium,11.0,18.0,1.0,16.69,False
+101116,United States,62.0,,basic,23.0,17.0,0.0,8.79,True
+101117,Canada,19.0,male,family,12.0,15.0,1.0,20.77,False
+101118,United States,57.0,female,basic,29.0,23.0,2.0,8.16,True
+101119,Australia,,male,basic,5.0,25.0,0.0,8.39,True
+101120,United Kingdom,33.0,male,basic,27.0,18.0,0.0,8.92,False
+101121,United States,23.0,female,basic,42.0,22.0,,8.8,False
+101122,Australia,25.0,female,basic,16.0,20.0,1.0,8.66,False
+101123,United States,43.0,male,premium,6.0,22.0,1.0,16.06,True
+101124,Singapore,25.0,male,basic,23.0,22.0,0.0,8.73,False
+101125,Singapore,47.0,female,basic,16.0,,1.0,8.81,False
+101126,Singapore,30.0,female,premium,20.0,17.0,3.0,16.13,True
+101127,United Kingdom,23.0,female,basic,30.0,21.0,0.0,8.66,False
+101128,United Kingdom,32.0,male,family,12.0,13.0,1.0,19.94,False
+101129,Malaysia,,nonbinary,student,10.0,24.0,0.0,6.67,True
+101130,Malaysia,35.0,female,premium,78.0,14.0,1.0,15.39,False
+101131,Singapore,38.0,female,student,23.0,18.0,2.0,7.37,True
+101132,United States,46.0,female,basic,34.0,22.0,1.0,9.84,True
+101133,Canada,51.0,female,basic,29.0,21.0,2.0,9.52,False
+101134,Malaysia,34.0,male,family,34.0,17.0,1.0,20.16,True
+101135,United States,25.0,male,family,21.0,11.0,0.0,19.67,False
+101136,Singapore,39.0,female,family,31.0,16.0,1.0,19.85,True
+101137,Singapore,44.0,female,basic,9.0,24.0,0.0,9.52,True
+101138,United States,20.0,female,family,3.0,26.0,0.0,18.85,True
+101139,United Kingdom,27.0,male,premium,7.0,23.0,3.0,15.81,False
+101140,United States,29.0,male,basic,14.0,,2.0,9.36,True
+101141,Canada,36.0,male,basic,13.0,,1.0,8.42,False
+101142,Australia,29.0,female,student,16.0,13.0,2.0,7.2,True
+101143,Australia,46.0,male,basic,9.0,,0.0,9.18,False
+101144,Singapore,19.0,female,family,2.0,15.0,2.0,19.26,True
+101145,United States,19.0,male,premium,11.0,16.0,1.0,16.03,False
+101146,Canada,34.0,male,family,4.0,15.0,2.0,19.68,False
+101147,Canada,36.0,male,family,15.0,18.0,2.0,20.2,False
+101148,Singapore,21.0,male,student,21.0,17.0,,7.32,True
+101149,Australia,31.0,female,basic,11.0,13.0,0.0,9.19,True
+101150,United States,33.0,male,basic,5.0,22.0,0.0,9.03,True
+101151,Australia,33.0,female,premium,17.0,17.0,2.0,16.13,False
+101152,United States,40.0,female,premium,81.0,16.0,0.0,15.4,True
+101153,United States,30.0,female,basic,23.0,21.0,1.0,8.97,False
+101154,Singapore,56.0,female,basic,24.0,22.0,1.0,8.59,True
+101155,United States,44.0,female,basic,10.0,15.0,2.0,9.51,False
+101156,United States,28.0,female,basic,8.0,20.0,0.0,9.33,True
+101157,United States,39.0,male,basic,34.0,24.0,0.0,9.33,True
+101158,Singapore,39.0,female,student,1.0,,2.0,7.85,False
+101159,Canada,53.0,female,basic,8.0,23.0,2.0,8.83,True
+101160,United States,31.0,nonbinary,student,48.0,,2.0,6.72,False
+101161,United Kingdom,47.0,male,student,15.0,,1.0,6.81,False
+101162,Australia,39.0,female,basic,3.0,17.0,0.0,8.19,False
+101163,United States,56.0,female,family,22.0,11.0,0.0,19.23,False
+101164,United States,53.0,male,premium,11.0,19.0,0.0,16.3,False
+101165,Australia,,male,family,2.0,11.0,2.0,19.29,True
+101166,Australia,35.0,female,basic,19.0,18.0,0.0,8.45,True
+101167,Singapore,,male,basic,17.0,24.0,1.0,8.94,False
+101168,Canada,36.0,female,basic,16.0,,0.0,8.78,True
+101169,United States,,female,premium,23.0,18.0,0.0,16.43,True
+101170,Singapore,39.0,,student,5.0,13.0,2.0,7.02,False
+101171,Canada,33.0,male,family,20.0,19.0,0.0,19.59,True
+101172,United States,32.0,male,family,18.0,19.0,0.0,20.48,True
+101173,Canada,23.0,female,student,33.0,,1.0,7.35,False
+101174,Singapore,45.0,female,family,8.0,16.0,3.0,19.28,False
+101175,Canada,28.0,female,basic,38.0,16.0,2.0,9.12,True
+101176,Singapore,,female,student,28.0,16.0,1.0,6.63,True
+101177,United States,22.0,female,premium,14.0,13.0,1.0,15.62,True
+101178,United States,40.0,male,basic,16.0,,1.0,9.92,True
+101179,United States,52.0,male,premium,1.0,16.0,2.0,16.05,False
+101180,Canada,18.0,male,student,16.0,14.0,1.0,6.88,True
+101181,United States,62.0,female,basic,27.0,21.0,1.0,9.03,True
+101182,United States,33.0,female,premium,12.0,23.0,1.0,16.43,False
+101183,United States,40.0,male,basic,33.0,20.0,1.0,8.64,False
+101184,United States,45.0,female,basic,22.0,21.0,2.0,8.72,False
+101185,Australia,47.0,male,basic,58.0,17.0,1.0,9.32,True
+101186,Singapore,41.0,female,family,9.0,17.0,0.0,19.23,True
+101187,Malaysia,50.0,male,student,25.0,,1.0,7.49,True
+101188,United States,44.0,male,basic,4.0,14.0,2.0,8.19,False
+101189,United Kingdom,59.0,male,basic,13.0,17.0,0.0,8.87,True
+101190,Singapore,44.0,male,basic,23.0,,1.0,8.19,False
+101191,Singapore,62.0,male,basic,26.0,13.0,2.0,8.46,True
+101192,Australia,49.0,female,premium,12.0,18.0,2.0,16.64,True
+101193,Malaysia,18.0,male,family,36.0,23.0,2.0,20.51,True
+101194,Australia,69.0,male,premium,41.0,13.0,3.0,16.57,False
+101195,United States,31.0,nonbinary,premium,9.0,22.0,1.0,15.27,False
+101196,United States,56.0,female,premium,14.0,22.0,0.0,15.46,False
+101197,United Kingdom,38.0,female,basic,13.0,19.0,4.0,9.16,True
+101198,United States,51.0,male,basic,10.0,9.0,3.0,9.35,False
+101199,Canada,30.0,male,student,40.0,21.0,2.0,6.59,True
+101200,Singapore,46.0,female,family,39.0,16.0,1.0,19.7,False
+101201,Singapore,,female,student,13.0,23.0,0.0,6.42,True
+101202,Australia,57.0,female,student,25.0,19.0,,7.82,False
+101203,United Kingdom,43.0,female,premium,33.0,16.0,0.0,15.75,False
+101204,United States,49.0,female,student,19.0,20.0,4.0,7.01,False
+101205,United States,18.0,female,premium,12.0,12.0,1.0,16.03,False
+101206,United Kingdom,37.0,female,basic,8.0,21.0,2.0,9.54,False
+101207,Singapore,43.0,male,basic,27.0,18.0,2.0,8.51,True
+101208,United States,41.0,female,basic,5.0,14.0,0.0,9.57,False
+101209,Singapore,50.0,female,basic,12.0,12.0,3.0,8.35,False
+101210,Canada,34.0,female,premium,11.0,17.0,1.0,16.57,True
+101211,Australia,39.0,female,family,4.0,16.0,1.0,19.13,False
+101212,Singapore,,nonbinary,family,15.0,15.0,1.0,,False
+101213,Singapore,18.0,male,premium,14.0,19.0,0.0,16.8,False
+101214,United States,45.0,,basic,7.0,17.0,1.0,9.34,False
+101215,Singapore,34.0,,family,39.0,22.0,0.0,20.2,False
+101216,United States,27.0,female,premium,27.0,14.0,,15.47,True
+101217,Singapore,42.0,female,basic,16.0,10.0,3.0,8.62,False
+101218,United Kingdom,53.0,female,basic,30.0,16.0,3.0,9.66,True
+101219,United States,,female,basic,35.0,19.0,,9.23,True
+101220,United States,36.0,female,basic,40.0,26.0,0.0,9.44,False
+101221,United States,49.0,male,family,9.0,13.0,1.0,20.03,True
+101222,Australia,48.0,female,family,30.0,11.0,1.0,19.85,False
+101223,United Kingdom,,female,family,14.0,20.0,3.0,20.37,False
+101224,United States,30.0,male,basic,19.0,,2.0,9.12,True
+101225,Australia,30.0,female,family,9.0,15.0,1.0,19.91,False
+101226,Singapore,48.0,female,family,16.0,21.0,1.0,19.28,False
+101227,Singapore,37.0,female,basic,30.0,19.0,1.0,9.47,True
+101228,Malaysia,25.0,female,premium,47.0,15.0,1.0,16.21,True
+101229,United States,18.0,female,premium,14.0,17.0,1.0,15.69,True
+101230,United States,48.0,male,premium,7.0,13.0,3.0,16.58,True
+101231,Singapore,31.0,male,basic,52.0,,,9.11,True
+101232,United States,42.0,female,premium,8.0,18.0,4.0,16.12,True
+101233,United Kingdom,53.0,female,basic,3.0,15.0,0.0,9.43,True
+101234,United States,22.0,male,basic,10.0,15.0,3.0,9.32,True
+101235,United States,37.0,male,basic,34.0,20.0,1.0,9.14,True
+101236,United States,36.0,female,student,8.0,21.0,2.0,6.9,False
+101237,Singapore,,,basic,5.0,19.0,1.0,9.98,False
+101238,United States,53.0,female,premium,17.0,22.0,2.0,15.62,False
+101239,United States,22.0,male,basic,47.0,19.0,,,False
+101240,Australia,45.0,female,student,22.0,21.0,1.0,6.95,False
+101241,United States,50.0,female,premium,4.0,23.0,3.0,16.22,False
+101242,United States,36.0,,student,64.0,13.0,0.0,7.61,True
+101243,United States,36.0,female,basic,20.0,21.0,0.0,8.83,False
+101244,United States,43.0,female,basic,31.0,14.0,2.0,9.29,False
+101245,United States,42.0,male,premium,4.0,18.0,2.0,16.12,True
+101246,United Kingdom,45.0,male,basic,57.0,13.0,2.0,8.67,False
+101247,United States,45.0,female,family,11.0,16.0,1.0,20.62,True
+101248,Australia,26.0,female,student,3.0,16.0,4.0,7.35,False
+101249,Malaysia,50.0,male,premium,19.0,10.0,,15.77,True
+101250,United States,52.0,female,student,31.0,19.0,1.0,7.54,False
+101251,United States,40.0,female,premium,25.0,22.0,1.0,15.57,False
+101252,United States,20.0,female,basic,25.0,27.0,2.0,8.98,True
+101253,United Kingdom,37.0,male,premium,23.0,14.0,1.0,15.78,False
+101254,United States,40.0,male,basic,18.0,26.0,2.0,9.37,False
+101255,Australia,24.0,male,family,4.0,22.0,1.0,19.75,False
+101256,Canada,,male,basic,13.0,,0.0,9.37,True
+101257,Canada,21.0,female,basic,12.0,21.0,1.0,9.29,True
+101258,Singapore,45.0,female,premium,40.0,24.0,,15.8,True
+101259,Malaysia,40.0,female,basic,34.0,12.0,,9.9,True
+101260,United States,18.0,male,basic,11.0,,2.0,8.62,False
+101261,Singapore,42.0,male,family,28.0,22.0,0.0,19.29,True
+101262,United States,37.0,female,basic,15.0,14.0,1.0,9.42,True
+101263,Malaysia,44.0,male,premium,3.0,17.0,2.0,14.92,False
+101264,Singapore,33.0,female,basic,1.0,,0.0,9.74,False
+101265,Canada,28.0,female,basic,26.0,19.0,2.0,9.04,False
+101266,United States,29.0,female,basic,6.0,,1.0,8.28,True
+101267,Malaysia,32.0,male,family,6.0,17.0,0.0,19.52,False
+101268,Singapore,38.0,male,student,9.0,21.0,1.0,6.17,False
+101269,Singapore,40.0,male,basic,26.0,17.0,4.0,9.18,True
+101270,Malaysia,36.0,male,student,34.0,,0.0,6.33,True
+101271,Singapore,33.0,male,premium,34.0,16.0,1.0,16.24,False
+101272,Singapore,34.0,male,premium,2.0,26.0,1.0,15.84,True
+101273,Singapore,68.0,,family,8.0,15.0,1.0,19.75,True
+101274,United States,29.0,female,family,7.0,19.0,0.0,20.24,False
+101275,United States,31.0,male,family,26.0,23.0,2.0,20.3,True
+101276,United States,78.0,male,premium,8.0,14.0,2.0,16.56,True
+101277,United States,43.0,male,premium,14.0,19.0,1.0,15.67,True
+101278,Australia,21.0,female,basic,28.0,,1.0,8.98,True
+101279,Singapore,48.0,male,basic,16.0,19.0,0.0,8.67,True
+101280,United States,27.0,,family,20.0,17.0,1.0,20.07,True
+101281,Singapore,49.0,female,basic,14.0,17.0,1.0,8.6,True
+101282,Singapore,35.0,nonbinary,basic,32.0,13.0,,8.78,False
+101283,United Kingdom,33.0,female,basic,34.0,24.0,0.0,8.78,False
+101284,Malaysia,,female,basic,23.0,11.0,,9.14,True
+101285,Malaysia,45.0,female,premium,34.0,20.0,2.0,15.99,True
+101286,Singapore,50.0,male,premium,78.0,23.0,1.0,16.24,True
+101287,United States,43.0,male,premium,27.0,22.0,5.0,15.94,False
+101288,Singapore,33.0,female,basic,15.0,,0.0,8.7,False
+101289,Singapore,45.0,male,premium,21.0,24.0,0.0,16.09,False
+101290,Singapore,53.0,female,premium,36.0,27.0,1.0,15.53,True
+101291,United Kingdom,40.0,female,family,11.0,21.0,2.0,20.27,True
+101292,Singapore,60.0,male,premium,11.0,28.0,0.0,15.85,False
+101293,United States,48.0,male,premium,20.0,16.0,,16.09,True
+101294,United States,,male,premium,15.0,15.0,2.0,16.1,True
+101295,United States,41.0,male,student,7.0,24.0,0.0,7.79,True
+101296,United States,40.0,nonbinary,family,18.0,12.0,1.0,20.18,True
+101297,United States,23.0,female,premium,42.0,14.0,1.0,16.03,True
+101298,Canada,37.0,female,premium,23.0,19.0,0.0,15.64,True
+101299,Singapore,41.0,female,basic,6.0,18.0,3.0,9.39,False
+101300,United States,33.0,,student,25.0,23.0,3.0,6.85,False
+101301,Singapore,42.0,male,basic,13.0,,1.0,8.23,True
+101302,Canada,38.0,male,basic,61.0,,2.0,8.89,True
+101303,United States,47.0,female,student,24.0,15.0,0.0,7.09,True
+101304,Australia,46.0,female,family,10.0,13.0,0.0,19.58,False
+101305,Malaysia,40.0,male,basic,27.0,19.0,0.0,8.93,False
+101306,Singapore,22.0,nonbinary,basic,19.0,,1.0,8.95,True
+101307,United Kingdom,59.0,female,basic,39.0,16.0,0.0,8.96,False
+101308,United States,36.0,female,premium,11.0,27.0,1.0,16.61,False
+101309,Malaysia,37.0,female,basic,24.0,22.0,2.0,8.33,True
+101310,Singapore,34.0,female,student,4.0,14.0,2.0,8.01,True
+101311,Malaysia,32.0,female,student,18.0,17.0,2.0,6.97,False
+101312,Singapore,57.0,female,premium,6.0,16.0,2.0,16.28,False
+101313,United States,55.0,male,premium,19.0,20.0,,16.05,True
+101314,United States,43.0,female,basic,22.0,18.0,1.0,8.13,True
+101315,United Kingdom,37.0,female,basic,23.0,18.0,0.0,8.46,True
+101316,Singapore,45.0,female,family,11.0,24.0,1.0,19.73,True
+101317,United States,39.0,male,basic,18.0,22.0,1.0,9.49,False
+101318,Canada,36.0,female,basic,36.0,14.0,4.0,8.3,True
+101319,Australia,42.0,female,basic,50.0,,1.0,8.56,True
+101320,Singapore,33.0,female,basic,18.0,28.0,0.0,9.07,True
+101321,Singapore,41.0,male,premium,36.0,21.0,1.0,16.23,True
+101322,United States,40.0,male,family,8.0,25.0,1.0,20.21,False
+101323,Canada,45.0,female,family,12.0,18.0,1.0,19.5,False
+101324,United States,31.0,female,premium,20.0,25.0,0.0,15.19,True
+101325,Australia,47.0,female,family,15.0,16.0,0.0,20.26,False
+101326,United States,27.0,male,premium,14.0,24.0,1.0,16.71,True
+101327,Singapore,31.0,male,family,34.0,22.0,0.0,19.82,True
+101328,United States,32.0,female,premium,7.0,16.0,0.0,15.42,False
+101329,United States,25.0,female,basic,7.0,20.0,2.0,8.78,True
+101330,Canada,50.0,male,student,5.0,22.0,2.0,7.19,False
+101331,Singapore,26.0,male,basic,20.0,,0.0,8.87,True
+101332,Singapore,30.0,female,basic,13.0,24.0,2.0,9.69,False
+101333,Malaysia,,female,basic,32.0,12.0,4.0,9.45,False
+101334,Malaysia,31.0,female,premium,19.0,14.0,1.0,16.08,False
+101335,Australia,36.0,male,premium,10.0,18.0,2.0,15.01,False
+101336,United States,26.0,male,premium,9.0,16.0,2.0,15.64,True
+101337,Singapore,48.0,male,student,15.0,12.0,1.0,6.72,False
+101338,Australia,48.0,male,basic,6.0,11.0,0.0,8.62,False
+101339,United States,47.0,female,premium,34.0,19.0,1.0,16.09,True
+101340,United States,44.0,female,basic,12.0,12.0,3.0,9.1,False
+101341,Canada,39.0,female,family,4.0,16.0,3.0,19.15,False
+101342,Singapore,32.0,male,basic,39.0,21.0,1.0,9.39,True
+101343,Singapore,28.0,male,basic,15.0,24.0,0.0,9.0,True
+101344,Malaysia,53.0,female,premium,25.0,15.0,3.0,16.17,False
+101345,United Kingdom,47.0,female,family,10.0,21.0,1.0,20.36,True
+101346,Singapore,30.0,male,family,40.0,16.0,2.0,19.61,False
+101347,United States,38.0,male,premium,8.0,26.0,1.0,16.62,False
+101348,Singapore,34.0,male,family,13.0,12.0,2.0,19.92,False
+101349,United States,24.0,female,premium,3.0,11.0,1.0,16.75,True
+101350,Canada,40.0,male,basic,39.0,,0.0,8.54,False
+101351,Australia,33.0,male,basic,9.0,19.0,2.0,9.71,True
+101352,United States,,male,basic,21.0,14.0,0.0,8.54,False
+101353,United States,20.0,male,basic,23.0,11.0,5.0,10.26,False
+101354,Australia,,male,premium,35.0,17.0,0.0,15.51,True
+101355,United States,34.0,male,premium,20.0,20.0,3.0,16.52,True
+101356,Singapore,37.0,male,premium,15.0,17.0,2.0,15.81,False
+101357,Singapore,27.0,female,premium,33.0,18.0,,16.35,False
+101358,United Kingdom,46.0,female,family,23.0,22.0,1.0,19.97,True
+101359,United States,37.0,male,family,14.0,18.0,5.0,19.44,False
+101360,United Kingdom,45.0,male,basic,41.0,16.0,,7.59,False
+101361,United States,36.0,female,basic,24.0,14.0,,10.24,False
+101362,United Kingdom,29.0,female,premium,5.0,22.0,1.0,16.03,True
+101363,United States,,male,premium,46.0,19.0,4.0,14.52,False
+101364,Singapore,23.0,male,basic,10.0,,0.0,9.14,False
+101365,Singapore,44.0,male,basic,35.0,21.0,2.0,9.33,False
+101366,United States,27.0,female,family,4.0,19.0,0.0,19.63,False
+101367,United States,49.0,male,premium,33.0,20.0,1.0,15.64,True
+101368,United States,34.0,male,basic,6.0,23.0,1.0,8.98,False
+101369,United States,51.0,female,premium,19.0,19.0,1.0,16.59,True
+101370,United States,25.0,female,student,24.0,,0.0,7.04,False
+101371,Malaysia,30.0,nonbinary,basic,14.0,21.0,0.0,9.72,False
+101372,Singapore,43.0,female,student,17.0,16.0,0.0,7.56,True
+101373,Canada,52.0,male,basic,7.0,15.0,2.0,,False
+101374,Malaysia,58.0,male,premium,30.0,15.0,2.0,15.2,False
+101375,United States,38.0,male,premium,20.0,18.0,0.0,15.88,False
+101376,United Kingdom,60.0,female,basic,8.0,,3.0,9.25,False
+101377,Australia,,male,student,21.0,10.0,1.0,7.02,True
+101378,United Kingdom,51.0,female,premium,21.0,20.0,1.0,16.31,True
+101379,Singapore,27.0,male,student,18.0,22.0,1.0,7.42,True
+101380,Singapore,43.0,female,basic,1.0,11.0,0.0,9.26,False
+101381,United States,18.0,male,student,12.0,18.0,1.0,6.85,True
+101382,Singapore,25.0,male,student,30.0,18.0,1.0,7.25,False
+101383,Malaysia,44.0,female,premium,25.0,20.0,0.0,,False
+101384,Malaysia,22.0,female,basic,24.0,20.0,1.0,8.25,True
+101385,United States,43.0,male,family,20.0,15.0,,20.23,False
+101386,United Kingdom,49.0,female,premium,32.0,20.0,1.0,16.91,True
+101387,United States,32.0,female,student,10.0,19.0,3.0,6.4,False
+101388,Australia,26.0,female,premium,8.0,14.0,2.0,16.49,True
+101389,United States,32.0,male,basic,53.0,14.0,0.0,,True
+101390,Malaysia,26.0,male,basic,9.0,13.0,0.0,8.25,True
+101391,Australia,37.0,,family,5.0,18.0,0.0,20.35,False
+101392,United States,39.0,nonbinary,student,14.0,19.0,0.0,6.85,False
+101393,United States,34.0,female,basic,18.0,28.0,2.0,8.96,True
+101394,Australia,58.0,female,family,32.0,14.0,,19.83,False
+101395,United States,29.0,female,student,12.0,24.0,1.0,7.65,True
+101396,Singapore,55.0,female,basic,12.0,15.0,0.0,8.93,False
+101397,Malaysia,26.0,female,basic,17.0,17.0,1.0,8.76,False
+101398,Singapore,39.0,male,family,11.0,21.0,0.0,19.77,False
+101399,Singapore,52.0,female,premium,4.0,20.0,0.0,15.82,True
+101400,Singapore,52.0,male,basic,5.0,21.0,1.0,8.45,True
+101401,United States,33.0,female,family,39.0,17.0,3.0,19.75,True
+101402,Malaysia,45.0,female,premium,28.0,16.0,1.0,16.05,False
+101403,United States,43.0,female,student,16.0,23.0,0.0,7.19,True
+101404,United States,32.0,male,student,25.0,18.0,3.0,7.59,True
+101405,United States,45.0,,family,28.0,19.0,1.0,20.11,False
+101406,Malaysia,60.0,female,premium,10.0,19.0,3.0,15.75,False
+101407,United States,44.0,female,basic,7.0,23.0,0.0,8.48,True
+101408,Australia,45.0,female,premium,36.0,14.0,1.0,16.14,False
+101409,United Kingdom,46.0,male,basic,2.0,20.0,0.0,8.93,False
+101410,Australia,20.0,female,family,25.0,25.0,2.0,19.95,False
+101411,Malaysia,44.0,male,basic,19.0,14.0,,9.12,True
+101412,Australia,26.0,female,premium,33.0,23.0,2.0,16.25,False
+101413,Malaysia,31.0,female,basic,25.0,20.0,0.0,9.12,False
+101414,United States,64.0,male,basic,24.0,13.0,4.0,8.9,False
+101415,Canada,35.0,female,basic,7.0,22.0,0.0,8.59,True
+101416,Singapore,29.0,female,premium,29.0,21.0,2.0,15.68,True
+101417,Singapore,52.0,male,family,23.0,20.0,0.0,20.41,True
+101418,Australia,27.0,female,basic,8.0,12.0,0.0,8.78,True
+101419,Malaysia,33.0,female,student,19.0,27.0,,6.32,False
+101420,United Kingdom,53.0,female,student,6.0,11.0,0.0,7.57,False
+101421,Singapore,39.0,male,basic,15.0,,1.0,8.52,False
+101422,Singapore,19.0,male,family,68.0,33.0,,20.01,True
+101423,Singapore,45.0,female,premium,7.0,19.0,1.0,,True
+101424,United States,,male,basic,4.0,15.0,0.0,8.99,False
+101425,Singapore,56.0,male,premium,5.0,20.0,0.0,14.75,True
+101426,United States,31.0,male,basic,14.0,,1.0,9.19,False
+101427,United States,51.0,male,student,27.0,,0.0,7.65,True
+101428,Canada,59.0,male,student,17.0,19.0,2.0,7.38,True
+101429,Singapore,28.0,male,family,5.0,18.0,0.0,18.93,False
+101430,Malaysia,36.0,female,premium,27.0,23.0,0.0,17.05,True
+101431,United Kingdom,,female,premium,2.0,23.0,2.0,15.33,True
+101432,United States,28.0,male,student,5.0,27.0,3.0,6.45,True
+101433,United States,,female,basic,10.0,16.0,2.0,9.38,True
+101434,United States,35.0,male,basic,35.0,17.0,4.0,9.22,False
+101435,Malaysia,35.0,female,premium,18.0,13.0,1.0,16.03,False
+101436,United States,39.0,male,basic,18.0,12.0,2.0,8.71,True
+101437,Singapore,39.0,female,basic,5.0,19.0,3.0,9.66,False
+101438,Malaysia,40.0,male,basic,11.0,,1.0,8.97,True
+101439,Malaysia,31.0,female,premium,32.0,10.0,1.0,15.21,False
+101440,United States,31.0,female,basic,22.0,18.0,1.0,9.61,False
+101441,United States,37.0,male,basic,27.0,,0.0,9.1,True
+101442,United States,37.0,male,basic,16.0,18.0,0.0,9.55,True
+101443,United States,,male,premium,32.0,18.0,3.0,16.28,False
+101444,United States,42.0,nonbinary,student,5.0,15.0,1.0,8.19,False
+101445,Singapore,18.0,female,basic,14.0,21.0,0.0,8.84,False
+101446,Malaysia,29.0,male,family,24.0,16.0,2.0,20.0,False
+101447,Singapore,35.0,female,family,3.0,16.0,3.0,20.35,False
+101448,United Kingdom,28.0,male,basic,1.0,18.0,2.0,8.84,True
+101449,United States,58.0,female,family,54.0,28.0,1.0,20.39,False
+101450,Canada,38.0,female,family,18.0,20.0,,18.52,False
+101451,United Kingdom,40.0,male,premium,3.0,17.0,0.0,15.95,False
+101452,Australia,32.0,male,basic,18.0,19.0,0.0,8.94,False
+101453,Malaysia,38.0,female,basic,5.0,18.0,3.0,8.92,True
+101454,United States,23.0,male,student,7.0,18.0,3.0,6.55,True
+101455,United States,36.0,male,family,36.0,18.0,,20.44,True
+101456,United States,,female,student,10.0,27.0,3.0,,True
+101457,Singapore,35.0,male,student,10.0,17.0,0.0,7.09,False
+101458,Malaysia,18.0,,basic,5.0,21.0,1.0,8.97,True
+101459,United States,24.0,female,family,12.0,21.0,0.0,20.24,True
+101460,Canada,56.0,male,premium,19.0,23.0,2.0,16.71,True
+101461,Singapore,48.0,female,family,10.0,9.0,1.0,20.09,False
+101462,United States,54.0,female,basic,63.0,20.0,1.0,9.41,True
+101463,United States,55.0,male,basic,6.0,,5.0,9.06,False
+101464,United Kingdom,46.0,female,family,6.0,22.0,2.0,19.74,False
+101465,United Kingdom,33.0,male,family,12.0,18.0,0.0,19.92,False
+101466,Singapore,26.0,male,premium,58.0,16.0,,15.85,False
+101467,United States,52.0,female,basic,28.0,17.0,,9.27,True
+101468,Canada,39.0,male,basic,10.0,21.0,2.0,9.04,False
+101469,United States,68.0,female,student,10.0,22.0,5.0,6.59,False
+101470,Malaysia,34.0,,premium,6.0,26.0,1.0,15.88,True
+101471,United States,,female,premium,12.0,27.0,1.0,15.23,False
+101472,United States,36.0,male,premium,14.0,18.0,2.0,15.9,False
+101473,Singapore,54.0,female,premium,27.0,17.0,,15.99,False
+101474,Singapore,58.0,male,premium,23.0,26.0,,16.89,False
+101475,Singapore,26.0,female,premium,11.0,15.0,1.0,16.66,False
+101476,Singapore,32.0,female,family,44.0,16.0,1.0,19.47,False
+101477,Malaysia,26.0,female,student,9.0,22.0,3.0,7.09,False
+101478,Singapore,23.0,male,student,4.0,,0.0,7.1,True
+101479,Singapore,46.0,nonbinary,premium,19.0,16.0,1.0,15.87,True
+101480,Singapore,36.0,female,premium,34.0,20.0,0.0,,False
+101481,United States,,female,family,16.0,18.0,3.0,19.81,True
+101482,Singapore,45.0,female,family,5.0,17.0,2.0,20.93,True
+101483,United States,18.0,female,premium,18.0,11.0,0.0,15.78,False
+101484,United Kingdom,53.0,male,family,20.0,20.0,0.0,20.16,False
+101485,United States,34.0,male,family,22.0,15.0,1.0,18.73,False
+101486,Malaysia,44.0,male,family,19.0,20.0,1.0,20.4,False
+101487,Singapore,45.0,female,family,37.0,26.0,0.0,,True
+101488,Australia,,female,basic,6.0,28.0,4.0,8.46,True
+101489,Singapore,37.0,male,premium,1.0,16.0,1.0,15.73,False
+101490,United States,18.0,female,premium,2.0,16.0,3.0,16.22,False
+101491,Australia,39.0,male,basic,5.0,13.0,2.0,9.0,True
+101492,United Kingdom,40.0,female,student,30.0,9.0,0.0,7.22,False
+101493,Canada,26.0,female,premium,12.0,12.0,1.0,15.85,False
+101494,Singapore,40.0,male,basic,47.0,23.0,1.0,9.92,False
+101495,United Kingdom,34.0,female,family,6.0,19.0,1.0,19.66,True
+101496,Australia,22.0,nonbinary,family,46.0,16.0,1.0,21.34,True
+101497,United Kingdom,46.0,female,family,7.0,27.0,0.0,20.61,True
+101498,United States,31.0,female,premium,14.0,15.0,2.0,16.41,True
+101499,United Kingdom,33.0,female,student,3.0,28.0,0.0,6.47,False
+101500,United Kingdom,32.0,female,premium,42.0,22.0,,16.44,True
+101501,Malaysia,53.0,male,premium,15.0,11.0,3.0,16.29,True
+101502,United States,38.0,female,basic,65.0,19.0,1.0,7.93,True
+101503,Singapore,39.0,male,premium,35.0,16.0,1.0,15.29,True
+101504,Canada,33.0,male,family,14.0,20.0,1.0,20.17,False
+101505,Singapore,44.0,female,premium,9.0,11.0,2.0,15.92,True
+101506,Canada,54.0,female,premium,31.0,15.0,5.0,15.73,False
+101507,Singapore,46.0,female,family,17.0,25.0,2.0,20.53,False
+101508,United States,46.0,male,family,8.0,21.0,2.0,19.55,False
+101509,Canada,45.0,male,basic,18.0,17.0,2.0,8.76,False
+101510,United States,21.0,female,student,2.0,15.0,0.0,6.67,True
+101511,United States,27.0,male,family,22.0,14.0,1.0,20.25,True
+101512,United Kingdom,36.0,female,student,25.0,,0.0,6.13,False
+101513,Canada,29.0,female,student,5.0,,1.0,6.74,False
+101514,Australia,25.0,female,student,38.0,,1.0,6.13,True
+101515,United States,18.0,nonbinary,family,32.0,17.0,,19.83,True
+101516,United States,22.0,female,premium,20.0,21.0,1.0,16.35,False
+101517,Malaysia,,female,basic,7.0,15.0,0.0,9.36,False
+101518,United States,37.0,female,premium,26.0,21.0,1.0,15.63,True
+101519,United States,28.0,male,family,12.0,16.0,0.0,20.26,True
+101520,United States,39.0,female,premium,19.0,19.0,1.0,15.9,False
+101521,Singapore,33.0,female,student,28.0,9.0,2.0,7.67,True
+101522,Australia,51.0,female,basic,4.0,15.0,2.0,8.93,True
+101523,Canada,36.0,male,premium,3.0,21.0,2.0,14.5,False
+101524,United Kingdom,,female,premium,11.0,18.0,1.0,16.44,True
+101525,United States,40.0,male,premium,58.0,18.0,2.0,15.76,True
+101526,United States,21.0,female,basic,67.0,21.0,1.0,,True
+101527,Singapore,37.0,female,basic,22.0,15.0,0.0,9.16,True
+101528,United States,23.0,male,family,33.0,21.0,3.0,19.28,False
+101529,United States,37.0,male,premium,16.0,10.0,0.0,16.03,True
+101530,United States,29.0,female,basic,18.0,12.0,1.0,9.26,True
+101531,United States,43.0,male,basic,14.0,18.0,3.0,9.17,False
+101532,Singapore,22.0,male,premium,36.0,28.0,1.0,15.69,True
+101533,United Kingdom,38.0,female,basic,47.0,,2.0,9.49,True
+101534,United States,45.0,male,family,17.0,20.0,0.0,19.49,True
+101535,Singapore,49.0,male,family,18.0,14.0,0.0,19.68,True
+101536,Canada,29.0,female,basic,14.0,22.0,3.0,8.92,False
+101537,Canada,38.0,male,premium,48.0,18.0,1.0,16.14,False
+101538,Canada,40.0,female,basic,30.0,16.0,1.0,8.83,False
+101539,Singapore,57.0,female,basic,7.0,21.0,1.0,9.6,True
+101540,Australia,20.0,nonbinary,student,56.0,18.0,0.0,7.14,True
+101541,United States,27.0,male,premium,1.0,13.0,0.0,16.03,True
+101542,United States,72.0,male,student,45.0,27.0,3.0,7.12,False
+101543,United States,35.0,male,basic,34.0,,2.0,9.36,True
+101544,Singapore,18.0,male,basic,17.0,25.0,3.0,9.11,True
+101545,Singapore,31.0,female,premium,17.0,12.0,0.0,15.09,True
+101546,United States,18.0,nonbinary,premium,15.0,15.0,2.0,16.53,True
+101547,Canada,41.0,male,student,7.0,14.0,1.0,7.05,False
+101548,United States,48.0,male,basic,53.0,18.0,1.0,9.33,False
+101549,United States,27.0,female,student,17.0,29.0,0.0,6.79,False
+101550,United States,32.0,female,student,7.0,14.0,1.0,6.08,False
+101551,Singapore,49.0,,premium,51.0,22.0,1.0,14.85,False
+101552,United States,18.0,female,basic,23.0,,0.0,8.52,True
+101553,United States,22.0,female,premium,24.0,24.0,4.0,16.25,False
+101554,United States,35.0,male,basic,59.0,21.0,1.0,9.64,False
+101555,Canada,29.0,male,family,27.0,17.0,0.0,20.14,False
+101556,Malaysia,34.0,female,premium,10.0,24.0,1.0,15.46,True
+101557,Singapore,23.0,female,student,27.0,22.0,3.0,6.6,True
+101558,United Kingdom,41.0,male,premium,8.0,18.0,1.0,16.67,False
+101559,Australia,36.0,female,premium,11.0,19.0,2.0,15.33,True
+101560,Malaysia,45.0,male,family,21.0,16.0,1.0,21.04,True
+101561,United Kingdom,40.0,,premium,33.0,15.0,2.0,16.93,True
+101562,Australia,40.0,female,student,10.0,17.0,3.0,8.06,True
+101563,Australia,21.0,female,basic,15.0,20.0,0.0,9.18,True
+101564,Canada,44.0,male,student,15.0,10.0,3.0,6.82,True
+101565,Singapore,34.0,female,family,37.0,11.0,2.0,20.17,False
+101566,United States,36.0,,student,17.0,,4.0,,True
+101567,United States,,,premium,56.0,21.0,2.0,15.66,True
+101568,Singapore,29.0,female,family,11.0,15.0,3.0,19.44,False
+101569,Singapore,54.0,male,basic,11.0,20.0,2.0,8.85,True
+101570,Singapore,,female,family,44.0,13.0,0.0,19.6,True
+101571,Singapore,47.0,female,basic,25.0,27.0,3.0,9.61,True
+101572,Singapore,26.0,male,basic,43.0,17.0,0.0,8.68,True
+101573,Australia,18.0,male,premium,5.0,20.0,1.0,16.04,True
+101574,United States,51.0,female,basic,17.0,15.0,0.0,9.48,True
+101575,United States,39.0,female,premium,21.0,19.0,2.0,16.63,True
+101576,Canada,,nonbinary,family,20.0,13.0,2.0,20.09,False
+101577,Australia,52.0,male,basic,15.0,23.0,1.0,9.18,False
+101578,Malaysia,28.0,male,family,20.0,19.0,2.0,19.48,False
+101579,Australia,,male,basic,20.0,24.0,2.0,9.5,True
+101580,Australia,,male,family,10.0,17.0,1.0,20.62,True
+101581,United States,25.0,female,family,36.0,16.0,2.0,19.05,True
+101582,Singapore,37.0,female,premium,52.0,17.0,,16.87,False
+101583,United States,51.0,male,family,29.0,24.0,0.0,19.64,True
+101584,United Kingdom,41.0,male,student,23.0,19.0,1.0,7.29,True
+101585,Malaysia,53.0,male,family,16.0,21.0,0.0,20.03,True
+101586,United States,52.0,male,premium,21.0,11.0,2.0,15.96,False
+101587,Singapore,38.0,female,premium,23.0,15.0,1.0,15.89,True
+101588,United States,18.0,male,family,7.0,14.0,2.0,19.49,True
+101589,United States,25.0,male,basic,35.0,16.0,2.0,9.25,True
+101590,United States,47.0,female,family,12.0,17.0,0.0,19.85,False
+101591,United States,19.0,male,basic,46.0,15.0,,8.34,False
+101592,Malaysia,34.0,male,family,19.0,13.0,1.0,19.47,False
+101593,Singapore,,female,basic,35.0,,1.0,8.34,True
+101594,Australia,56.0,male,basic,28.0,11.0,2.0,8.73,True
+101595,United Kingdom,31.0,male,student,5.0,,0.0,7.23,True
+101596,United States,30.0,,student,43.0,15.0,1.0,6.63,True
+101597,United States,37.0,female,student,9.0,22.0,0.0,7.48,False
+101598,Canada,42.0,male,student,11.0,17.0,4.0,6.93,False
+101599,United States,36.0,female,premium,12.0,25.0,1.0,15.85,True
+101600,Malaysia,51.0,male,basic,3.0,20.0,4.0,9.0,True
+101601,United States,28.0,female,basic,20.0,25.0,2.0,9.69,True
+101602,United Kingdom,39.0,male,premium,37.0,18.0,2.0,15.3,True
+101603,Canada,43.0,male,basic,45.0,19.0,3.0,9.82,True
+101604,United States,33.0,,student,15.0,,0.0,7.47,True
+101605,United States,48.0,male,basic,17.0,15.0,1.0,8.98,True
+101606,Malaysia,40.0,female,basic,30.0,,0.0,,False
+101607,United States,47.0,male,basic,15.0,19.0,1.0,8.83,False
+101608,Singapore,40.0,female,basic,39.0,13.0,0.0,9.13,True
+101609,Singapore,43.0,male,basic,16.0,15.0,3.0,8.72,False
+101610,United States,30.0,female,family,8.0,15.0,3.0,20.47,False
+101611,Canada,30.0,male,basic,20.0,19.0,0.0,8.64,False
+101612,Canada,53.0,female,premium,4.0,27.0,2.0,15.96,True
+101613,United States,46.0,male,student,20.0,20.0,1.0,7.33,False
+101614,Australia,26.0,male,premium,23.0,21.0,5.0,16.51,True
+101615,United States,40.0,female,family,9.0,14.0,0.0,19.58,True
+101616,United States,,female,premium,22.0,21.0,2.0,16.37,True
+101617,Singapore,31.0,male,basic,14.0,20.0,0.0,8.5,False
+101618,Malaysia,50.0,male,basic,9.0,20.0,2.0,7.91,True
+101619,United States,,female,student,4.0,,2.0,6.62,True
+101620,United States,39.0,female,premium,5.0,18.0,0.0,16.41,False
+101621,Singapore,18.0,female,basic,49.0,,1.0,,True
+101622,Canada,33.0,male,premium,13.0,13.0,3.0,15.72,False
+101623,United States,42.0,male,family,23.0,23.0,2.0,20.02,True
+101624,Singapore,44.0,female,family,15.0,19.0,0.0,20.0,True
+101625,Canada,,male,premium,50.0,24.0,1.0,16.3,True
+101626,United States,35.0,male,student,9.0,15.0,2.0,6.18,True
+101627,United States,36.0,male,family,18.0,18.0,0.0,19.94,True
+101628,United States,22.0,female,premium,11.0,17.0,0.0,16.05,True
+101629,Singapore,,female,basic,35.0,13.0,2.0,8.31,True
+101630,Singapore,23.0,female,basic,22.0,17.0,2.0,8.3,False
+101631,Australia,18.0,female,student,18.0,13.0,0.0,6.81,True
+101632,United Kingdom,25.0,female,premium,5.0,19.0,0.0,15.99,True
+101633,United Kingdom,,female,premium,65.0,11.0,0.0,16.0,True
+101634,Malaysia,35.0,female,premium,15.0,28.0,0.0,15.71,True
+101635,Singapore,41.0,male,basic,7.0,27.0,1.0,8.69,False
+101636,Singapore,32.0,female,family,4.0,20.0,0.0,19.79,False
+101637,Malaysia,,male,basic,5.0,15.0,0.0,9.14,False
+101638,United States,,female,family,17.0,20.0,0.0,20.61,True
+101639,Canada,18.0,male,premium,35.0,15.0,,14.88,False
+101640,Canada,,female,basic,21.0,21.0,,9.3,False
+101641,United States,37.0,male,basic,4.0,17.0,0.0,8.93,True
+101642,Singapore,41.0,male,family,17.0,16.0,0.0,20.25,False
+101643,United States,29.0,female,basic,43.0,15.0,2.0,9.58,True
+101644,United States,,male,basic,13.0,17.0,1.0,8.61,False
+101645,Singapore,28.0,female,family,21.0,14.0,1.0,20.46,False
+101646,United States,29.0,male,premium,13.0,14.0,3.0,15.36,True
+101647,Canada,29.0,female,premium,25.0,17.0,1.0,16.05,False
+101648,Australia,50.0,female,basic,9.0,,1.0,8.87,False
+101649,Canada,23.0,female,student,1.0,21.0,1.0,7.01,True
+101650,United States,42.0,,basic,6.0,21.0,1.0,8.5,False
+101651,United States,40.0,female,basic,12.0,17.0,1.0,,False
+101652,United States,50.0,male,basic,16.0,22.0,1.0,9.78,True
+101653,United States,36.0,female,basic,12.0,14.0,0.0,8.5,False
+101654,Malaysia,47.0,female,basic,12.0,,2.0,9.08,True
+101655,Singapore,36.0,female,basic,35.0,,,9.42,False
+101656,United States,43.0,male,basic,7.0,13.0,0.0,8.84,False
+101657,Australia,20.0,male,premium,17.0,15.0,1.0,16.67,False
+101658,Singapore,18.0,female,student,4.0,26.0,0.0,6.78,True
+101659,United States,43.0,male,basic,29.0,21.0,1.0,,True
+101660,United States,,female,basic,21.0,,0.0,8.49,True
+101661,United Kingdom,44.0,female,student,64.0,18.0,2.0,7.05,True
+101662,Canada,32.0,male,student,6.0,16.0,1.0,6.99,False
+101663,United States,56.0,female,family,51.0,19.0,2.0,20.31,True
+101664,Malaysia,32.0,female,basic,7.0,17.0,1.0,8.67,True
+101665,Australia,43.0,male,premium,13.0,15.0,1.0,15.65,False
+101666,Australia,45.0,female,basic,5.0,21.0,0.0,9.22,False
+101667,United States,59.0,male,basic,63.0,21.0,1.0,9.69,False
+101668,United States,34.0,male,premium,23.0,18.0,0.0,16.3,False
+101669,Australia,30.0,male,premium,23.0,14.0,1.0,16.91,False
+101670,United States,20.0,male,premium,8.0,24.0,2.0,16.27,False
+101671,United Kingdom,57.0,male,premium,1.0,16.0,1.0,16.25,True
+101672,Canada,43.0,female,basic,12.0,17.0,0.0,,True
+101673,United States,43.0,male,basic,11.0,17.0,4.0,9.73,False
+101674,Canada,75.0,male,family,2.0,16.0,1.0,20.61,True
+101675,Malaysia,42.0,male,student,13.0,,2.0,6.45,True
+101676,Canada,22.0,female,basic,17.0,20.0,5.0,9.39,False
+101677,Singapore,36.0,male,premium,24.0,13.0,2.0,16.12,False
+101678,Australia,26.0,male,basic,1.0,9.0,0.0,8.89,True
+101679,Singapore,33.0,,basic,5.0,,3.0,8.1,False
+101680,Canada,33.0,male,family,8.0,17.0,0.0,19.22,True
+101681,Australia,31.0,female,basic,36.0,,1.0,8.81,True
+101682,Canada,21.0,female,premium,36.0,20.0,1.0,15.26,True
+101683,United States,57.0,male,premium,22.0,10.0,2.0,15.82,True
+101684,United States,42.0,female,basic,13.0,17.0,1.0,9.35,True
+101685,United States,35.0,female,basic,38.0,19.0,2.0,8.7,True
+101686,Singapore,47.0,female,basic,20.0,24.0,1.0,9.03,False
+101687,Singapore,44.0,female,student,37.0,22.0,0.0,6.46,True
+101688,Singapore,41.0,male,premium,23.0,18.0,2.0,16.14,False
+101689,Singapore,46.0,male,premium,3.0,15.0,2.0,16.24,False
+101690,Canada,40.0,male,basic,1.0,22.0,0.0,8.28,False
+101691,Malaysia,46.0,female,premium,12.0,13.0,1.0,15.61,True
+101692,United States,47.0,male,basic,31.0,18.0,4.0,8.36,False
+101693,Canada,40.0,male,premium,10.0,18.0,1.0,16.24,True
+101694,United Kingdom,35.0,male,family,43.0,17.0,1.0,20.07,False
+101695,Singapore,56.0,female,premium,29.0,19.0,1.0,15.97,True
+101696,United States,,female,basic,41.0,21.0,,8.93,True
+101697,Canada,43.0,male,basic,12.0,,1.0,9.15,True
+101698,Malaysia,43.0,male,basic,7.0,12.0,2.0,9.16,False
+101699,Canada,31.0,female,premium,6.0,21.0,3.0,15.74,False
+101700,Malaysia,28.0,male,student,25.0,13.0,1.0,6.67,True
+101701,Malaysia,,female,basic,3.0,17.0,3.0,8.96,True
+101702,United States,32.0,female,premium,3.0,18.0,0.0,15.9,True
+101703,United Kingdom,21.0,male,family,10.0,14.0,3.0,21.02,True
+101704,Singapore,30.0,male,basic,20.0,,2.0,8.8,False
+101705,Malaysia,41.0,female,basic,8.0,,1.0,9.13,True
+101706,United States,53.0,male,basic,36.0,12.0,2.0,9.22,True
+101707,Singapore,45.0,male,family,41.0,14.0,0.0,20.69,True
+101708,Australia,18.0,female,premium,1.0,24.0,2.0,15.58,True
+101709,United States,46.0,male,family,23.0,15.0,2.0,,True
+101710,Canada,31.0,male,student,10.0,,3.0,6.92,False
+101711,Singapore,43.0,male,family,32.0,15.0,2.0,21.24,False
+101712,Malaysia,38.0,nonbinary,student,24.0,16.0,2.0,7.17,False
+101713,Australia,36.0,male,family,19.0,16.0,,,True
+101714,United States,37.0,female,student,15.0,18.0,1.0,,False
+101715,Canada,38.0,female,family,4.0,23.0,2.0,20.66,True
+101716,United States,54.0,male,family,70.0,21.0,2.0,20.03,True
+101717,United Kingdom,38.0,nonbinary,family,5.0,19.0,1.0,19.96,False
+101718,United Kingdom,51.0,female,student,52.0,18.0,0.0,7.35,False
+101719,Australia,49.0,female,premium,27.0,17.0,1.0,15.82,False
+101720,United States,46.0,male,premium,11.0,19.0,2.0,15.88,True
+101721,United States,18.0,female,premium,10.0,12.0,2.0,15.52,False
+101722,United Kingdom,51.0,female,student,3.0,21.0,1.0,7.85,False
+101723,Singapore,33.0,male,premium,17.0,23.0,2.0,15.38,False
+101724,Singapore,47.0,male,family,3.0,12.0,1.0,20.07,False
+101725,United States,26.0,male,family,37.0,17.0,1.0,20.23,False
+101726,United States,24.0,male,student,21.0,,0.0,6.98,False
+101727,Australia,62.0,female,basic,16.0,19.0,0.0,8.36,True
+101728,United States,27.0,male,family,18.0,15.0,2.0,19.49,True
+101729,Singapore,52.0,female,family,21.0,16.0,2.0,,True
+101730,Malaysia,39.0,female,student,13.0,12.0,0.0,6.6,False
+101731,United States,,male,student,14.0,19.0,1.0,5.95,False
+101732,Canada,37.0,male,premium,55.0,18.0,2.0,16.18,False
+101733,United States,22.0,male,premium,35.0,23.0,1.0,15.55,True
+101734,Australia,,female,basic,27.0,22.0,2.0,9.31,False
+101735,Canada,25.0,male,student,11.0,18.0,1.0,6.89,False
+101736,Australia,33.0,male,basic,2.0,14.0,4.0,8.87,False
+101737,United States,49.0,male,family,24.0,10.0,,20.02,False
+101738,Singapore,41.0,male,family,18.0,19.0,3.0,19.42,False
+101739,Canada,20.0,female,premium,14.0,15.0,0.0,15.58,True
+101740,United States,48.0,male,basic,16.0,17.0,1.0,8.86,True
+101741,United States,38.0,male,basic,6.0,17.0,0.0,8.42,False
+101742,United States,31.0,male,student,7.0,16.0,1.0,7.35,False
+101743,Malaysia,47.0,male,premium,35.0,26.0,2.0,15.84,True
+101744,United Kingdom,36.0,male,basic,1.0,15.0,0.0,8.27,False
+101745,United Kingdom,24.0,female,family,31.0,14.0,0.0,19.71,False
+101746,Canada,60.0,,basic,44.0,14.0,1.0,9.04,True
+101747,Singapore,38.0,male,student,24.0,23.0,,6.77,False
+101748,Singapore,37.0,nonbinary,basic,23.0,14.0,1.0,9.19,False
+101749,Singapore,,nonbinary,basic,7.0,,0.0,9.28,True
+101750,United Kingdom,52.0,female,basic,8.0,21.0,1.0,10.19,True
+101751,United States,32.0,female,premium,12.0,10.0,0.0,16.57,False
+101752,Australia,19.0,male,premium,4.0,13.0,1.0,15.17,False
+101753,Canada,30.0,male,family,8.0,25.0,4.0,19.81,True
+101754,United States,54.0,female,premium,18.0,20.0,0.0,15.86,False
+101755,Singapore,48.0,male,basic,11.0,21.0,2.0,,True
+101756,United States,35.0,female,basic,19.0,,2.0,8.52,False
+101757,Malaysia,54.0,male,basic,35.0,9.0,,8.72,True
+101758,Australia,47.0,female,student,19.0,17.0,,6.37,False
+101759,Malaysia,35.0,female,basic,23.0,35.0,4.0,8.69,False
+101760,United States,36.0,female,student,3.0,22.0,1.0,6.71,True
+101761,United States,42.0,male,basic,34.0,24.0,0.0,8.83,True
+101762,United States,28.0,male,basic,3.0,15.0,1.0,8.4,False
+101763,United States,,male,basic,10.0,18.0,0.0,9.48,True
+101764,United States,42.0,,basic,6.0,16.0,3.0,9.23,True
+101765,United States,18.0,female,family,2.0,23.0,1.0,19.27,True
+101766,Malaysia,36.0,female,premium,18.0,16.0,,16.0,False
+101767,United States,34.0,male,basic,25.0,12.0,2.0,8.21,False
+101768,United States,50.0,female,family,45.0,20.0,,,True
+101769,Australia,18.0,male,premium,20.0,29.0,1.0,16.8,False
+101770,Singapore,33.0,male,student,8.0,16.0,0.0,6.96,False
+101771,Canada,32.0,male,student,11.0,12.0,0.0,6.56,False
+101772,United Kingdom,50.0,female,family,2.0,16.0,1.0,19.66,False
+101773,Australia,37.0,male,family,12.0,20.0,3.0,19.76,False
+101774,United Kingdom,60.0,,family,16.0,21.0,1.0,19.94,False
+101775,Singapore,46.0,female,premium,24.0,20.0,1.0,16.68,False
+101776,United Kingdom,33.0,male,family,29.0,15.0,1.0,20.47,False
+101777,Singapore,41.0,male,basic,24.0,12.0,1.0,9.48,False
+101778,United States,,male,family,7.0,19.0,2.0,20.08,False
+101779,Singapore,48.0,female,student,5.0,13.0,1.0,6.41,False
+101780,United States,22.0,nonbinary,basic,28.0,,,8.6,True
+101781,Canada,28.0,nonbinary,family,2.0,18.0,2.0,20.02,False
+101782,United States,43.0,female,student,60.0,20.0,3.0,6.39,False
+101783,United States,53.0,male,basic,8.0,21.0,1.0,9.14,True
+101784,United States,18.0,female,premium,38.0,15.0,1.0,16.39,True
+101785,Australia,54.0,male,student,10.0,22.0,3.0,7.26,True
+101786,United States,36.0,male,student,25.0,,0.0,7.24,True
+101787,United Kingdom,18.0,male,basic,5.0,17.0,3.0,,False
+101788,Australia,18.0,male,basic,17.0,,0.0,9.66,False
+101789,United States,20.0,female,family,3.0,14.0,2.0,19.21,False
+101790,Canada,38.0,male,basic,21.0,,1.0,8.91,False
+101791,United States,37.0,male,basic,5.0,,0.0,9.3,True
+101792,United States,,female,basic,6.0,18.0,0.0,9.17,True
+101793,United Kingdom,31.0,,basic,11.0,12.0,2.0,8.35,True
+101794,Australia,25.0,male,premium,13.0,18.0,2.0,15.44,True
+101795,United States,33.0,male,family,24.0,22.0,,20.13,True
+101796,Singapore,38.0,male,premium,22.0,24.0,0.0,16.25,False
+101797,United States,41.0,male,family,18.0,15.0,,19.44,True
+101798,Singapore,,,premium,31.0,16.0,2.0,16.19,False
+101799,United Kingdom,49.0,female,basic,22.0,,1.0,8.23,False
+101800,United Kingdom,31.0,female,basic,23.0,,0.0,9.3,True
+101801,United Kingdom,28.0,male,basic,6.0,18.0,1.0,8.55,True
+101802,United States,31.0,male,basic,33.0,13.0,,9.03,True
+101803,United Kingdom,51.0,male,basic,30.0,19.0,1.0,8.95,False
+101804,United Kingdom,36.0,male,basic,19.0,24.0,1.0,9.57,True
+101805,United Kingdom,30.0,male,basic,30.0,13.0,1.0,9.11,False
+101806,United States,49.0,male,family,16.0,16.0,2.0,19.69,True
+101807,Singapore,64.0,male,premium,47.0,11.0,1.0,16.17,False
+101808,Singapore,41.0,female,student,18.0,16.0,1.0,8.06,False
+101809,United States,53.0,male,family,15.0,16.0,3.0,20.36,False
+101810,United States,50.0,male,premium,22.0,20.0,1.0,15.96,True
+101811,Singapore,31.0,female,basic,54.0,,2.0,8.57,True
+101812,Canada,38.0,,premium,10.0,17.0,1.0,15.68,False
+101813,United States,23.0,male,basic,21.0,12.0,0.0,9.33,False
+101814,Australia,36.0,male,premium,11.0,18.0,1.0,15.55,False
+101815,Singapore,30.0,male,premium,15.0,20.0,1.0,15.99,True
+101816,Canada,33.0,female,premium,8.0,14.0,1.0,16.71,False
+101817,Singapore,29.0,female,basic,23.0,17.0,0.0,9.07,True
+101818,Singapore,35.0,female,family,17.0,22.0,1.0,19.45,False
+101819,United Kingdom,44.0,female,family,29.0,25.0,1.0,21.08,False
+101820,Malaysia,37.0,male,family,35.0,12.0,1.0,20.87,True
+101821,Singapore,18.0,male,premium,39.0,20.0,2.0,,True
+101822,Singapore,29.0,male,premium,11.0,17.0,1.0,16.63,False
+101823,United Kingdom,20.0,female,basic,22.0,21.0,,8.86,False
+101824,Canada,41.0,female,family,40.0,24.0,,20.35,False
+101825,United States,44.0,female,premium,8.0,10.0,2.0,15.78,False
+101826,Singapore,41.0,male,basic,18.0,12.0,2.0,8.31,False
+101827,Singapore,29.0,female,basic,8.0,20.0,1.0,10.29,True
+101828,Malaysia,,male,student,53.0,14.0,2.0,6.29,False
+101829,Singapore,32.0,male,premium,40.0,16.0,2.0,16.14,False
+101830,Singapore,24.0,male,premium,25.0,19.0,0.0,16.13,True
+101831,Malaysia,47.0,female,premium,25.0,15.0,0.0,16.25,False
+101832,Singapore,48.0,,premium,9.0,17.0,2.0,15.95,False
+101833,United States,49.0,male,premium,43.0,24.0,0.0,15.95,True
+101834,United States,31.0,male,basic,13.0,16.0,1.0,9.06,False
+101835,United States,52.0,female,premium,10.0,12.0,0.0,16.23,True
+101836,United States,32.0,male,family,36.0,17.0,,19.99,False
+101837,Singapore,46.0,male,basic,12.0,18.0,2.0,8.96,False
+101838,Canada,32.0,female,family,10.0,20.0,1.0,19.33,False
+101839,Canada,35.0,female,basic,30.0,18.0,2.0,10.0,True
+101840,United States,18.0,female,family,6.0,19.0,2.0,20.26,False
+101841,Singapore,34.0,female,premium,25.0,18.0,2.0,16.09,True
+101842,United States,39.0,female,family,18.0,16.0,2.0,19.68,False
+101843,Malaysia,,male,premium,29.0,21.0,2.0,15.49,True
+101844,United States,59.0,female,student,23.0,20.0,0.0,7.42,False
+101845,United Kingdom,24.0,male,premium,76.0,17.0,,15.91,False
+101846,United States,31.0,male,family,19.0,21.0,2.0,20.3,True
+101847,United Kingdom,27.0,,family,12.0,19.0,1.0,19.31,False
+101848,Singapore,31.0,female,basic,17.0,17.0,5.0,9.76,False
+101849,Canada,50.0,male,basic,23.0,17.0,1.0,9.44,True
+101850,United States,56.0,nonbinary,premium,51.0,14.0,1.0,15.95,True
+101851,Australia,30.0,male,basic,26.0,,3.0,9.22,True
+101852,Singapore,29.0,,premium,8.0,20.0,2.0,16.36,False
+101853,Canada,24.0,female,premium,96.0,23.0,,15.32,False
+101854,Australia,54.0,female,premium,34.0,25.0,0.0,16.83,True
+101855,Malaysia,51.0,male,basic,8.0,24.0,2.0,9.23,False
+101856,United States,37.0,male,family,6.0,25.0,0.0,19.64,False
+101857,United States,21.0,male,premium,5.0,21.0,0.0,15.44,False
+101858,United States,22.0,male,family,16.0,22.0,2.0,20.48,False
+101859,United States,40.0,female,basic,16.0,15.0,0.0,9.1,True
+101860,Singapore,45.0,male,premium,9.0,23.0,0.0,16.23,False
+101861,Malaysia,18.0,female,basic,4.0,18.0,3.0,9.0,False
+101862,Malaysia,34.0,male,family,6.0,16.0,1.0,19.49,False
+101863,Singapore,57.0,male,basic,27.0,15.0,1.0,9.24,False
+101864,United Kingdom,35.0,male,student,13.0,,2.0,6.89,True
+101865,Australia,56.0,female,basic,7.0,22.0,1.0,8.98,False
+101866,Malaysia,46.0,male,premium,18.0,15.0,1.0,17.18,False
+101867,United States,25.0,,basic,21.0,,1.0,9.42,True
+101868,Singapore,34.0,female,premium,23.0,22.0,2.0,16.45,False
+101869,Australia,36.0,female,premium,18.0,22.0,1.0,17.35,False
+101870,United States,27.0,male,premium,16.0,14.0,0.0,16.18,True
+101871,Singapore,,female,basic,38.0,,,9.05,True
+101872,Malaysia,56.0,female,basic,6.0,24.0,3.0,8.65,True
+101873,Malaysia,26.0,female,basic,14.0,17.0,1.0,8.76,True
+101874,Australia,51.0,female,student,2.0,27.0,0.0,5.97,True
+101875,Canada,33.0,female,premium,12.0,20.0,0.0,16.39,False
+101876,United States,38.0,male,basic,19.0,20.0,1.0,8.36,True
+101877,United States,45.0,female,student,30.0,,0.0,7.44,False
+101878,Singapore,31.0,male,basic,2.0,14.0,1.0,8.97,False
+101879,Singapore,45.0,female,premium,19.0,19.0,0.0,16.05,True
+101880,Singapore,18.0,female,family,56.0,18.0,2.0,19.97,False
+101881,United Kingdom,43.0,,student,24.0,11.0,1.0,7.68,True
+101882,Singapore,18.0,male,family,5.0,13.0,0.0,20.59,False
+101883,Canada,35.0,male,premium,12.0,16.0,2.0,15.98,False
+101884,United States,48.0,male,student,24.0,26.0,3.0,6.54,True
+101885,United States,45.0,female,basic,10.0,,2.0,9.45,False
+101886,United States,22.0,female,student,20.0,,2.0,6.5,False
+101887,United States,24.0,female,family,19.0,15.0,,19.21,False
+101888,Australia,30.0,male,student,16.0,,1.0,7.24,False
+101889,Singapore,40.0,female,basic,5.0,17.0,1.0,9.6,False
+101890,United States,18.0,nonbinary,basic,9.0,17.0,2.0,8.79,True
+101891,Canada,38.0,male,family,60.0,17.0,2.0,20.19,True
+101892,Singapore,42.0,male,premium,12.0,21.0,0.0,15.78,True
+101893,United States,35.0,male,premium,13.0,15.0,2.0,16.35,True
+101894,United States,44.0,,student,13.0,,0.0,7.54,True
+101895,United States,41.0,male,premium,30.0,22.0,0.0,15.86,False
+101896,United Kingdom,32.0,female,basic,14.0,29.0,1.0,8.48,True
+101897,United States,18.0,male,premium,16.0,13.0,1.0,15.26,True
+101898,United States,40.0,male,basic,19.0,24.0,3.0,9.45,False
+101899,United States,27.0,female,basic,32.0,16.0,2.0,8.42,False
+101900,Singapore,31.0,male,basic,16.0,19.0,0.0,9.18,True
+101901,United States,44.0,female,family,17.0,22.0,0.0,20.38,True
+101902,Australia,55.0,female,family,10.0,23.0,2.0,19.74,True
+101903,United States,38.0,male,premium,21.0,23.0,4.0,15.91,False
+101904,United Kingdom,,female,premium,25.0,26.0,0.0,16.49,True
+101905,Singapore,21.0,male,family,26.0,25.0,1.0,19.59,True
+101906,Singapore,41.0,male,family,54.0,14.0,1.0,19.54,True
+101907,United States,37.0,male,student,8.0,20.0,0.0,6.87,True
+101908,Canada,53.0,female,premium,17.0,13.0,3.0,16.63,True
+101909,Australia,32.0,,family,14.0,22.0,1.0,,True
+101910,United States,35.0,nonbinary,premium,48.0,25.0,1.0,15.94,True
+101911,United States,51.0,female,premium,27.0,19.0,1.0,15.63,True
+101912,Australia,37.0,male,student,3.0,16.0,1.0,7.52,True
+101913,Singapore,25.0,female,premium,9.0,24.0,1.0,15.16,False
+101914,United States,69.0,female,premium,12.0,23.0,2.0,16.11,False
+101915,United States,25.0,male,basic,4.0,13.0,0.0,8.97,True
+101916,United Kingdom,37.0,male,premium,18.0,19.0,2.0,16.64,False
+101917,Canada,42.0,male,premium,11.0,12.0,1.0,16.69,False
+101918,Singapore,41.0,male,family,56.0,19.0,,19.52,True
+101919,Malaysia,36.0,female,premium,21.0,17.0,3.0,16.07,False
+101920,Singapore,36.0,female,basic,12.0,,0.0,8.7,False
+101921,United States,35.0,female,student,7.0,15.0,1.0,6.84,True
+101922,Singapore,25.0,male,basic,16.0,27.0,2.0,9.3,False
+101923,United States,64.0,female,student,45.0,14.0,1.0,6.82,True
+101924,United States,35.0,male,basic,14.0,19.0,1.0,9.09,False
+101925,United States,,female,premium,16.0,18.0,0.0,16.47,True
+101926,United States,34.0,male,premium,35.0,22.0,,16.75,True
+101927,United Kingdom,34.0,male,family,20.0,20.0,4.0,20.13,True
+101928,United States,33.0,male,basic,29.0,9.0,0.0,9.05,True
+101929,Singapore,19.0,female,student,22.0,23.0,2.0,6.44,True
+101930,United Kingdom,36.0,nonbinary,premium,21.0,22.0,,16.78,True
+101931,United Kingdom,,female,premium,3.0,20.0,5.0,16.24,False
+101932,Canada,52.0,female,premium,6.0,19.0,1.0,16.06,False
+101933,Canada,24.0,female,basic,19.0,12.0,4.0,9.03,False
+101934,United Kingdom,31.0,female,premium,8.0,25.0,1.0,16.17,True
+101935,United States,27.0,male,basic,16.0,19.0,1.0,9.38,True
+101936,Singapore,55.0,female,basic,6.0,21.0,1.0,9.44,False
+101937,United Kingdom,28.0,female,premium,35.0,19.0,0.0,16.8,True
+101938,United States,45.0,male,premium,8.0,16.0,0.0,16.11,False
+101939,United States,50.0,male,basic,7.0,29.0,1.0,9.87,True
+101940,United States,36.0,male,basic,4.0,13.0,0.0,9.52,True
+101941,Singapore,21.0,male,basic,26.0,17.0,0.0,8.96,False
+101942,Singapore,,female,basic,16.0,,0.0,8.16,False
+101943,United States,48.0,male,premium,34.0,16.0,,16.03,True
+101944,Australia,23.0,female,basic,10.0,18.0,2.0,9.77,True
+101945,Malaysia,43.0,female,student,6.0,20.0,1.0,6.6,True
+101946,United States,39.0,female,basic,15.0,18.0,2.0,9.03,False
+101947,Malaysia,43.0,male,basic,39.0,,0.0,9.07,False
+101948,United States,44.0,female,student,3.0,22.0,1.0,7.46,True
+101949,Malaysia,27.0,male,basic,20.0,24.0,0.0,8.8,True
+101950,Malaysia,26.0,female,premium,21.0,15.0,2.0,15.56,False
+101951,United States,47.0,,student,44.0,17.0,1.0,7.28,True
+101952,Canada,30.0,female,student,8.0,23.0,1.0,6.62,False
+101953,Malaysia,18.0,female,family,3.0,22.0,2.0,19.07,True
+101954,Australia,46.0,female,basic,11.0,17.0,3.0,9.91,False
+101955,Malaysia,26.0,male,premium,29.0,24.0,1.0,16.45,True
+101956,Singapore,44.0,male,student,16.0,18.0,1.0,7.93,True
+101957,United States,55.0,female,student,23.0,18.0,2.0,7.43,True
+101958,Australia,38.0,male,basic,6.0,21.0,0.0,9.33,True
+101959,United Kingdom,50.0,female,premium,13.0,15.0,3.0,16.17,False
+101960,United Kingdom,40.0,female,basic,17.0,15.0,0.0,8.9,True
+101961,Singapore,57.0,female,basic,4.0,10.0,1.0,9.25,True
+101962,Singapore,25.0,male,family,17.0,24.0,0.0,19.71,True
+101963,United States,38.0,female,basic,12.0,,2.0,8.46,False
+101964,Canada,,male,basic,86.0,18.0,1.0,8.82,False
+101965,United States,36.0,female,basic,16.0,15.0,1.0,9.64,True
+101966,Canada,,male,premium,45.0,17.0,1.0,15.37,False
+101967,Australia,33.0,female,basic,23.0,16.0,,8.38,True
+101968,Singapore,63.0,male,premium,14.0,16.0,2.0,16.29,False
+101969,Singapore,63.0,male,basic,41.0,16.0,2.0,8.78,False
+101970,United States,41.0,female,student,5.0,26.0,3.0,7.23,True
+101971,Malaysia,45.0,female,basic,11.0,27.0,1.0,9.48,True
+101972,Canada,52.0,male,premium,30.0,15.0,0.0,16.22,True
+101973,United States,24.0,nonbinary,basic,1.0,20.0,1.0,8.67,False
+101974,United States,22.0,nonbinary,basic,15.0,19.0,1.0,9.63,False
+101975,United States,53.0,female,basic,15.0,24.0,0.0,9.36,False
+101976,Singapore,41.0,male,basic,19.0,,2.0,9.0,False
+101977,Malaysia,35.0,,basic,13.0,23.0,1.0,8.98,False
+101978,Canada,38.0,female,premium,29.0,14.0,0.0,16.18,False
+101979,United States,18.0,male,family,8.0,24.0,3.0,19.83,False
+101980,Australia,,male,basic,32.0,20.0,2.0,8.17,True
+101981,United States,29.0,male,premium,6.0,22.0,0.0,16.37,True
+101982,Australia,49.0,male,premium,20.0,17.0,0.0,16.34,True
+101983,United States,,female,basic,37.0,21.0,2.0,7.84,True
+101984,United Kingdom,45.0,male,premium,8.0,12.0,0.0,16.25,False
+101985,Malaysia,43.0,female,basic,9.0,21.0,0.0,9.87,False
+101986,United States,20.0,female,basic,33.0,,3.0,8.43,False
+101987,United Kingdom,45.0,female,premium,18.0,16.0,0.0,15.95,True
+101988,Malaysia,46.0,male,student,3.0,,1.0,6.9,False
+101989,United States,53.0,male,student,19.0,,0.0,7.82,False
+101990,United States,63.0,female,student,26.0,23.0,2.0,7.55,True
+101991,United Kingdom,18.0,male,premium,34.0,21.0,3.0,15.55,True
+101992,United States,33.0,nonbinary,basic,20.0,23.0,0.0,9.16,True
+101993,United States,29.0,male,basic,23.0,19.0,1.0,10.14,True
+101994,Singapore,40.0,male,basic,48.0,12.0,0.0,8.68,True
+101995,Canada,38.0,female,basic,31.0,,0.0,8.98,False
+101996,United States,35.0,male,basic,13.0,15.0,1.0,9.25,True
+101997,United States,50.0,male,premium,14.0,19.0,3.0,15.68,False
+101998,Australia,25.0,male,basic,36.0,,1.0,9.87,False
+101999,Singapore,26.0,male,basic,20.0,24.0,0.0,8.75,True

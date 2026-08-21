@@ -154,6 +154,7 @@
         '[data-testid="part-Submission_MultipleChoiceQuestion"]',
         '[data-testid="part-Submission_CheckboxQuestion"]',
         '[data-testid="part-Submission_TextInputQuestion"]',
+        '[data-testid="part-Submission_CodeQuestion"]',
         '[data-testid^="part-Submission_"]',
         '.rc-FormPartsQuestion',
         'fieldset'
@@ -162,21 +163,46 @@
     for (const selector of selectors) {
         document.querySelectorAll(selector).forEach(function(node) {
             if (seen.has(node)) return;
-            const hasChoices = node.querySelector('input[type="radio"], input[type="checkbox"]');
+            const hasChoices = node.querySelector('input[type="radio"], input[type="checkbox"], [role="radio"], [role="checkbox"]');
             const hasTextAnswer = node.querySelector(
                 'input[aria-label="Enter answer here"], textarea[aria-label="Enter answer here"], input[type="text"], textarea'
             );
-            if (!hasChoices && !hasTextAnswer) return;
+            const hasCodeEditor = node.querySelector('.monaco-editor, .CodeMirror');
+            if (!hasChoices && !hasTextAnswer && !hasCodeEditor) return;
             seen.add(node);
             results.push(node);
         });
     }
 
+    // Top-level Monaco/CodeMirror blocks not wrapped in a known testid.
+    // Skip any editor that lives inside a block that already has radio/checkbox
+    // inputs — those are MCQs using the editor only to display the scenario.
+    document.querySelectorAll('.monaco-editor, .CodeMirror').forEach(function(editor) {
+        let parent = editor.parentElement;
+        for (let i = 0; i < 10 && parent; i++) {
+            if (seen.has(parent)) return;
+            // If this ancestor already has choice inputs it's an MCQ block — bail out.
+            if (parent.querySelector('input[type="radio"], input[type="checkbox"], [role="radio"], [role="checkbox"]')) {
+                return;
+            }
+            if (
+                parent.querySelector('[data-testid*="legend"], [data-testid*="prompt"]') ||
+                parent.querySelector('h1,h2,h3,h4') ||
+                parent.matches('fieldset, [role="group"]')
+            ) {
+                seen.add(parent);
+                results.push(parent);
+                return;
+            }
+            parent = parent.parentElement;
+        }
+    });
+
     if (results.length === 0) {
-        document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(function(input) {
+        document.querySelectorAll('input[type="radio"], input[type="checkbox"], [role="radio"], [role="checkbox"]').forEach(function(input) {
             let parent = input.parentElement;
             for (let i = 0; i < 12 && parent; i++) {
-                const count = parent.querySelectorAll('input[type="radio"], input[type="checkbox"]').length;
+                const count = parent.querySelectorAll('input[type="radio"], input[type="checkbox"], [role="radio"], [role="checkbox"]').length;
                 if (count >= 2 && !seen.has(parent)) {
                     seen.add(parent);
                     results.push(parent);
@@ -204,13 +230,16 @@
 
     async function scanAllQuestions() {
         if (!state.autoAnswerEnabled) return;
-    const blocks = findQuestionBlocks();
-    if (blocks.length > 0) {
-        console.log('[Coursera Auto] Scanning ' + blocks.length + ' question block(s)');
-    }
-        for (let i = 0; i < blocks.length; i++) {
-            await processQuestion(blocks[i]);
+        const blocks = findQuestionBlocks();
+        if (blocks.length > 0) {
+            console.log('[Coursera Auto] Scanning ' + blocks.length + ' question block(s)');
         }
+        // Process all questions concurrently — one stuck/sandboxed question won't block others.
+        await Promise.allSettled(blocks.map(function(block) {
+            return processQuestion(block).catch(function(err) {
+                console.error('[Coursera Auto] Question error (skipping):', err);
+            });
+        }));
     }
 
     function startVideoMonitoring() {
@@ -249,7 +278,23 @@
 }
 
 async function processQuestion(questionElement) {
-    if (questionElement.dataset.courseraAutomationDone === 'true') return;
+    if (questionElement.dataset.courseraAutomationDone === 'true') {
+        // For MCQ blocks: retry if a radio/checkbox exists but nothing is selected yet.
+        // For code/text blocks: trust the done flag — don't infinite-loop on them.
+        const hasChoices = questionElement.querySelector(
+            'input[type="radio"], input[type="checkbox"], [role="radio"], [role="checkbox"]'
+        );
+        if (!hasChoices) return; // code / fill-in-blank — already processed, skip
+
+        const hasSelection = questionElement.querySelector(
+            'input[type="radio"]:checked, input[type="checkbox"]:checked, ' +
+            '[role="radio"][aria-checked="true"], [role="checkbox"][aria-checked="true"]'
+        );
+        if (hasSelection) return; // MCQ genuinely answered
+
+        // MCQ has choices but nothing selected — reset and retry.
+        questionElement.removeAttribute('data-coursera-automation-done');
+    }
 
     const questionData = extractQuestionData(questionElement);
     if (!questionData) return;
@@ -257,8 +302,14 @@ async function processQuestion(questionElement) {
     questionElement.dataset.courseraAutomationDone = 'true';
 
     try {
-        console.log('[Coursera Auto] Question:', questionData.prompt.slice(0, 80) + '...');
-        console.log('[Coursera Auto] Options:', questionData.options.map(function(o) { return o.text; }));
+        console.log('[Coursera Auto] Question [' + questionData.type + ']:', questionData.prompt.slice(0, 80) + (questionData.prompt.length > 80 ? '...' : ''));
+        if (questionData.type === 'code') {
+            console.log('[Coursera Auto] Code editor (' + questionData.editorType + '), template lines:', questionData.codeTemplate ? questionData.codeTemplate.split('\n').length : 0);
+        } else if (questionData.type === 'text') {
+            console.log('[Coursera Auto] Fill-in-the-blank: ' + questionData.options.length + ' blank(s)');
+        } else {
+            console.log('[Coursera Auto] Options:', questionData.options.map(function(o) { return o.text; }));
+        }
 
         const answerResult = await getAIAnswer(questionData);
         if (!answerResult || !answerResult.answers || !answerResult.answers.length) {
@@ -285,73 +336,191 @@ function normalizeText(text) {
 
 function extractQuestionData(questionElement) {
     let prompt = '';
+    let embeddedCode = ''; // code shown inside the question as context (not the answer editor)
 
+    // Clean text: strip code editor DOMs (their span soup garbles innerText).
+    function getCleanText(el) {
+        if (!el) return '';
+        const clone = el.cloneNode(true);
+        clone.querySelectorAll('.monaco-editor, .CodeMirror, script, style').forEach(function(n) {
+            n.remove();
+        });
+        return (clone.innerText || clone.textContent || '').replace(/\s+/g, ' ').trim();
+    }
+
+    // Prompt-only text: also strips MCQ option elements so the question field
+    // never contains the answer choices (which would confuse the AI).
+    function getPromptText(el) {
+        if (!el) return '';
+        const clone = el.cloneNode(true);
+        clone.querySelectorAll(
+            '.monaco-editor, .CodeMirror, script, style, ' +
+            'label.cds-checkboxAndRadio-label, .rc-Option, ' +
+            '[role="radio"], [role="checkbox"], ' +
+            'input[type="radio"], input[type="checkbox"]'
+        ).forEach(function(n) { n.remove(); });
+        return (clone.innerText || clone.textContent || '')
+            .replace(/\s+/g, ' ')
+            .replace(/^\d+\.\s*/, '')
+            .replace(/\d+\s*points?\s*/gi, '')
+            .trim();
+    }
+
+    // Extract code content from any Monaco/CodeMirror embedded in the question for context.
+    const anyMonaco = questionElement.querySelector('.monaco-editor');
+    const anyCM     = questionElement.querySelector('.CodeMirror');
+    if (anyMonaco) {
+        const lines = anyMonaco.querySelectorAll('.view-lines .view-line');
+        if (lines.length > 0) {
+            embeddedCode = [...lines].map(function(l) { return l.textContent; }).join('\n').trim();
+        }
+    } else if (anyCM) {
+        const codeEl = anyCM.querySelector('.CodeMirror-code');
+        if (codeEl) embeddedCode = codeEl.textContent.trim();
+    }
+
+    // ── Prompt extraction ────────────────────────────────────────────────────
+    // 1. Prefer [data-testid="legend"] — strip code editors before reading text.
     const legend = questionElement.querySelector('[data-testid="legend"]');
-    const cml = legend && legend.querySelector('.rc-CML');
-    const fromLegend = ((cml || legend || null).innerText || '')
-        .replace(/^\d+\.\s*/, '')
-        .replace(/\d+\s*points?\s*/gi, '')
-        .replace(/\s+/g, ' ')
-        .trim();
-    if (fromLegend) {
+    const cml    = legend && legend.querySelector('.rc-CML');
+    const fromLegend = getPromptText(cml || legend);
+    if (fromLegend.length > 10) {
         prompt = fromLegend.slice(0, 1200);
     }
 
-    if (!prompt) {
+    // 2. Try known prompt selectors (skip anything inside a code editor or option label).
+    if (!prompt || prompt.length < 15) {
         const promptSelectors = [
             '[data-testid="question-prompt"]',
             '[data-testid="prompt"]',
             '.rc-FormPartsQuestion__contentCell',
             '.question-prompt',
-            'h1', 'h2', 'h3', 'h4'
+            'h1', 'h2', 'h3', 'h4', 'p', 'span[class*="prompt"]'
         ];
-        for (const selector of promptSelectors) {
-            const el = questionElement.querySelector(selector);
-            if (el && el.textContent.trim().length > 5) {
-                prompt = el.textContent.trim().slice(0, 1200);
+        for (const sel of promptSelectors) {
+            const el = questionElement.querySelector(sel);
+            if (!el) continue;
+            if (el.closest('.monaco-editor, .CodeMirror, label.cds-checkboxAndRadio-label')) continue;
+            const t = getCleanText(el).replace(/\d+\s*points?\s*/gi, '').trim();
+            if (t.length > 15) {
+                prompt = t.slice(0, 1200);
                 break;
             }
         }
     }
 
+    // 3. Nuclear fallback: whole block text, but strip options so the AI only sees the question.
+    if (!prompt || prompt.length < 15) {
+        const full = getPromptText(questionElement);
+        if (full.length > 10) prompt = full.slice(0, 1200);
+    }
+
+    // ── Options extraction ────────────────────────────────────────────────────
     const options = [];
+
+    // Coursera standard: label.cds-checkboxAndRadio-label
     const newLabels = questionElement.querySelectorAll('label.cds-checkboxAndRadio-label');
     if (newLabels.length >= 2) {
         newLabels.forEach(function(label, index) {
-            const text = (label.innerText || '').replace(/\s+/g, ' ').trim().replace(/^[○◉□■✓✗]\s*/, '');
+            const text = getCleanText(label).replace(/^[○◉□■✓✗]\s*/, '');
             if (text) options.push({ text: text, index: index, element: label });
         });
     }
 
+    // Legacy Coursera UI
     if (options.length === 0) {
         const legacyOpts = questionElement.querySelectorAll('.rc-Option');
         if (legacyOpts.length >= 2) {
             legacyOpts.forEach(function(opt, index) {
-                const text = (opt.innerText || '').replace(/\s+/g, ' ').trim();
+                const text = getCleanText(opt);
                 if (text) options.push({ text: text, index: index, element: opt });
             });
         }
     }
 
+    // Any label wrapping a real input[type=radio/checkbox]
     if (options.length === 0) {
         const labels = [...questionElement.querySelectorAll('label')].filter(function(label) {
             return label.querySelector('input[type="radio"], input[type="checkbox"]');
         });
         labels.forEach(function(label, index) {
-            const text = (label.innerText || '').replace(/\s+/g, ' ').trim();
+            const text = getCleanText(label);
             if (text && text.length < 800) {
                 options.push({ text: text, index: index, element: label });
             }
         });
     }
 
-    const textInput = questionElement.querySelector(
-        'input[aria-label="Enter answer here"], textarea[aria-label="Enter answer here"], input[type="text"], textarea'
+    // Coursera custom [role="radio"/"checkbox"] elements (newer UI, no <input>)
+    if (options.length === 0) {
+        const roleEls = [...questionElement.querySelectorAll('[role="radio"], [role="checkbox"]')];
+        if (roleEls.length >= 2) {
+            roleEls.forEach(function(el, index) {
+                const text = getCleanText(el);
+                if (text && text.length < 800) {
+                    options.push({ text: text, index: index, element: el });
+                }
+            });
+        }
+    }
+
+    // ── Code editor (Monaco / CodeMirror) ──────────────────────────────────
+    // Only treat as a code question when there are NO radio/checkbox inputs —
+    // many MCQ questions embed a Monaco block just to display the scenario/table.
+    const hasChoiceInputs = !!questionElement.querySelector(
+        'input[type="radio"], input[type="checkbox"], [role="radio"], [role="checkbox"]'
     );
-    if (textInput && prompt) {
+    const monacoContainer = !hasChoiceInputs && questionElement.querySelector('.monaco-editor');
+    const cmContainer     = !hasChoiceInputs && !monacoContainer && questionElement.querySelector('.CodeMirror');
+    const codeEditorEl    = monacoContainer || cmContainer;
+
+    if (codeEditorEl && prompt) {
+        // Assign a stable ID so injected.js can find the right editor instance.
+        if (!codeEditorEl.dataset.courseraEditorId) {
+            codeEditorEl.dataset.courseraEditorId =
+                'ce-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7);
+        }
+
+        // Read the current code template shown in the editor for context.
+        let codeTemplate = '';
+        if (monacoContainer) {
+            // Monaco renders each visual line inside .view-line spans.
+            const lineEls = monacoContainer.querySelectorAll('.view-lines .view-line');
+            if (lineEls.length > 0) {
+                codeTemplate = [...lineEls].map(function(l) { return l.textContent; }).join('\n');
+            }
+        } else if (cmContainer) {
+            const codeEl = cmContainer.querySelector('.CodeMirror-code');
+            if (codeEl) codeTemplate = codeEl.textContent;
+        }
+
         return {
             prompt: prompt,
-            options: [{ text: '', index: 0, element: textInput }],
+            options: [],
+            type: 'code',
+            editorId: codeEditorEl.dataset.courseraEditorId,
+            editorType: monacoContainer ? 'monaco' : 'codemirror',
+            codeTemplate: codeTemplate.trim()
+        };
+    }
+
+    // ── Plain text inputs ───────────────────────────────────────────────────
+    const textInputSelectors = [
+        'input[aria-label="Enter answer here"]',
+        'textarea[aria-label="Enter answer here"]',
+        'input[data-testid*="text-input"]',
+        'input[type="text"]',
+        'textarea'
+    ].join(', ');
+    const textInputs = [...questionElement.querySelectorAll(textInputSelectors)].filter(function(el) {
+        // Exclude inputs that are already inside a radio/checkbox label (they belong to MCQ)
+        return !el.closest('label.cds-checkboxAndRadio-label') && !el.closest('.rc-Option');
+    });
+
+    if (textInputs.length > 0 && prompt) {
+        return {
+            prompt: prompt,
+            options: textInputs.map(function(el, i) { return { text: '', index: i, element: el }; }),
             type: 'text'
         };
     }
@@ -376,6 +545,7 @@ function extractQuestionData(questionElement) {
             prompt: prompt,
             options: options,
             type: isCheckboxQuestion ? 'multiple-select' : 'multiple-choice',
+            codeContext: embeddedCode || null,
             checkboxCount: checkboxCount
         };
     }
@@ -392,8 +562,13 @@ async function getAIAnswer(questionData) {
             },
             body: JSON.stringify({
                 question: questionData.prompt,
-                options: questionData.options.map(opt => opt.text),
-                type: questionData.type
+                // Fill-in-the-blank and code questions have no selectable options.
+                options: (questionData.type === 'text' || questionData.type === 'code')
+                    ? []
+                    : questionData.options.map(function(opt) { return opt.text; }),
+                type: questionData.type,
+                // Pass any embedded code as context so the AI can reason about it.
+                context: questionData.codeTemplate || questionData.codeContext || null
             })
         });
         
@@ -571,10 +746,34 @@ function fillTextAnswer(input, answerText) {
 function selectAnswer(questionElement, questionData, answerTexts) {
     const texts = Array.isArray(answerTexts) ? answerTexts : [answerTexts];
 
+    if (questionData.type === 'code') {
+        const code = texts[0] || '';
+        if (!code) return false;
+        window.postMessage({
+            type: 'COURSERA_AUTOMATION',
+            action: 'fillCodeEditor',
+            code: code,
+            editorId: questionData.editorId,
+            editorType: questionData.editorType
+        }, '*');
+        console.log('[Coursera Auto] Sent code to editor (' + questionData.editorType + ')');
+        return true;
+    }
+
     if (questionData.type === 'text') {
-        const input = questionData.options[0].element;
-        console.log('[Coursera Auto] Filled text answer');
-        return fillTextAnswer(input, texts[0] || '');
+        const inputs = questionData.options.map(function(o) { return o.element; });
+        let filled = 0;
+        inputs.forEach(function(input, i) {
+            // If the AI returned multiple answers (one per blank) use them in order,
+            // otherwise reuse the single answer for every blank.
+            const answerText = texts[i] || texts[0] || '';
+            if (answerText && !input.value) {
+                fillTextAnswer(input, answerText);
+                filled++;
+            }
+        });
+        console.log('[Coursera Auto] Filled ' + filled + '/' + inputs.length + ' text blank(s)');
+        return filled > 0;
     }
 
     const isMulti =
@@ -623,7 +822,10 @@ function selectAnswer(questionElement, questionData, answerTexts) {
     if (!input) {
         const fallback = questionData.options[optionIndex].element;
         if (fallback) {
-            fallback.click();
+            // Use full mouse event sequence — required for [role="radio"] custom elements.
+            ['mousedown', 'mouseup', 'click'].forEach(function(type) {
+                fallback.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
+            });
             console.log('[Coursera Auto] Clicked option:', questionData.options[optionIndex].text);
             return true;
         }

@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Coursera Sandbox Solver",
+  "version": "1.0.0",
+  "description": "Auto-detect coding sandbox questions and fill AI-generated solutions",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.coursera.org/*",
+    "http://localhost:8000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.coursera.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Coursera Sandbox Solver"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://*.coursera.org/*"]
+    }
+  ]
+}

@@ -1,159 +1,321 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <style>
-        body {
-            width: 300px;
-            padding: 16px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin: 0;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .header h2 {
-            margin: 0;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        
-        .control-group {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 12px;
-            margin-bottom: 12px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .control-group h3 {
-            margin: 0 0 10px 0;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .speed-controls {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .speed-btn {
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: all 0.2s;
-        }
-        
-        .speed-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
-        .speed-btn.active {
-            background: rgba(255, 255, 255, 0.4);
-            border-color: rgba(255, 255, 255, 0.6);
-        }
-        
-        .toggle-btn {
-            width: 100%;
-            background: rgba(34, 197, 94, 0.8);
-            border: none;
-            color: white;
-            padding: 10px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.2s;
-        }
-        
-        .toggle-btn:hover {
-            background: rgba(34, 197, 94, 1);
-        }
-        
-        .toggle-btn.active {
-            background: rgba(239, 68, 68, 0.8);
-        }
-        
-        .toggle-btn.active:hover {
-            background: rgba(239, 68, 68, 1);
-        }
-        
-        .status {
-            text-align: center;
-            font-size: 12px;
-            margin-top: 10px;
-            opacity: 0.8;
-        }
-        
-        .custom-speed {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            margin-top: 8px;
-        }
-        
-        .custom-speed input {
-            flex: 1;
-            padding: 4px 8px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 12px;
-        }
-        
-        .custom-speed input::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-        
-        .custom-speed button {
-            padding: 4px 8px;
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 340px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #0d0d0d;
+      color: #e2e2e2;
+      padding: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #242424;
+    }
+
+    .header-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #1a4fd6 0%, #3b82f6 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .header-icon svg {
+      width: 17px;
+      height: 17px;
+      fill: #fff;
+    }
+
+    .header-text {}
+
+    .header-name {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #f0f0f0;
+    }
+
+    .header-sub {
+      font-size: 10.5px;
+      color: #6b6b6b;
+      margin-top: 2px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* ── Section ── */
+    .section {
+      margin-bottom: 16px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #7a7a7a;
+      margin-bottom: 9px;
+    }
+
+    /* ── Speed grid ── */
+    .speed-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 5px;
+    }
+
+    .speed-btn {
+      background: #1c1c1c;
+      border: 1px solid #2e2e2e;
+      color: #b0b0b0;
+      padding: 8px 2px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: inherit;
+      transition: background 0.12s, color 0.12s, border-color 0.12s;
+      text-align: center;
+    }
+
+    .speed-btn:hover {
+      background: #242424;
+      color: #d8d8d8;
+      border-color: #3a3a3a;
+    }
+
+    .speed-btn.active {
+      background: #152340;
+      border-color: #2755a0;
+      color: #6badf7;
+      font-weight: 600;
+    }
+
+    /* ── Custom speed ── */
+    .custom-speed {
+      display: flex;
+      gap: 6px;
+      margin-top: 7px;
+    }
+
+    .custom-speed input {
+      flex: 1;
+      padding: 8px 10px;
+      border: 1px solid #2e2e2e;
+      border-radius: 7px;
+      background: #1c1c1c;
+      color: #dcdcdc;
+      font-size: 12px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s;
+      -moz-appearance: textfield;
+    }
+
+    .custom-speed input::-webkit-inner-spin-button,
+    .custom-speed input::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    .custom-speed input:focus {
+      border-color: #3b6fd4;
+    }
+
+    .custom-speed input::placeholder {
+      color: #545454;
+    }
+
+    .custom-speed button {
+      padding: 8px 14px;
+      background: #1e3260;
+      border: 1px solid #2755a0;
+      color: #82b4f7;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: inherit;
+      font-weight: 600;
+      transition: background 0.12s, color 0.12s, border-color 0.12s;
+      white-space: nowrap;
+    }
+
+    .custom-speed button:hover {
+      background: #253d76;
+      color: #a8caff;
+      border-color: #3567c4;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      height: 1px;
+      background: #1e1e1e;
+      margin: 16px 0;
+    }
+
+    /* ── Toggle ── */
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #1c1c1c;
+      border: 1px solid #2e2e2e;
+      border-radius: 9px;
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      user-select: none;
+    }
+
+    .toggle-row:hover {
+      background: #222222;
+      border-color: #383838;
+    }
+
+    .toggle-row.active {
+      background: #0b2116;
+      border-color: #1a5c34;
+    }
+
+    .toggle-row.active:hover {
+      background: #0e2a1c;
+    }
+
+    .toggle-left {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      pointer-events: none;
+    }
+
+    .toggle-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #3a3a3a;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+
+    .toggle-row.active .toggle-dot {
+      background: #4ade80;
+      box-shadow: 0 0 6px rgba(74, 222, 128, 0.5);
+    }
+
+    .toggle-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #b0b0b0;
+      transition: color 0.15s;
+      pointer-events: none;
+    }
+
+    .toggle-row.active .toggle-label {
+      color: #4ade80;
+    }
+
+    .toggle-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #555555;
+      pointer-events: none;
+      transition: color 0.15s, background 0.15s;
+      background: #242424;
+      padding: 3px 7px;
+      border-radius: 4px;
+      border: 1px solid #333;
+    }
+
+    .toggle-row.active .toggle-badge {
+      color: #4ade80;
+      background: #0e2d1c;
+      border-color: #1e6638;
+    }
+
+    /* ── Status ── */
+    .status {
+      font-size: 11px;
+      color: #5e5e5e;
+      margin-top: 9px;
+      min-height: 15px;
+      line-height: 1.5;
+      padding-left: 2px;
+      transition: color 0.2s;
+    }
+
+    .status.flash {
+      color: #7dba9e;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="header">
-        <h2>🎓 Coursera Auto</h2>
+  <div class="header">
+    <div class="header-icon">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
     </div>
-    
-    <div class="control-group">
-        <h3>📹 Video Speed</h3>
-        <div class="speed-controls">
-            <button class="speed-btn" data-speed="1">1x</button>
-            <button class="speed-btn" data-speed="1.5">1.5x</button>
-            <button class="speed-btn" data-speed="2">2x</button>
-            <button class="speed-btn" data-speed="3">3x</button>
-            <button class="speed-btn" data-speed="4">4x</button>
-            <button class="speed-btn" data-speed="5">5x</button>
-        </div>
-        <div class="custom-speed">
-            <input type="number" id="customSpeed" placeholder="Custom speed" min="0.1" max="10" step="0.1">
-            <button id="setCustomSpeed">Set</button>
-        </div>
+    <div class="header-text">
+      <div class="header-name">Autopilot</div>
+      <div class="header-sub">Coursera Tools</div>
     </div>
-    
-    <div class="control-group">
-        <h3>🤖 Auto Answer</h3>
-        <button class="toggle-btn" id="autoAnswerToggle">Enable Auto Answer</button>
-        <div class="status" id="status">Ready</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Playback Speed</div>
+    <div class="speed-grid">
+      <button class="speed-btn" data-speed="1">1x</button>
+      <button class="speed-btn" data-speed="1.5">1.5x</button>
+      <button class="speed-btn" data-speed="2">2x</button>
+      <button class="speed-btn" data-speed="3">3x</button>
+      <button class="speed-btn" data-speed="4">4x</button>
+      <button class="speed-btn" data-speed="5">5x</button>
     </div>
-    
-    <script src="popup.js"></script>
+    <div class="custom-speed">
+      <input type="number" id="customSpeed" placeholder="Custom speed" min="0.1" max="10" step="0.1">
+      <button id="setCustomSpeed">Apply</button>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-label">Auto Answer</div>
+    <div class="toggle-row" id="autoAnswerToggle">
+      <div class="toggle-left">
+        <div class="toggle-dot"></div>
+        <span class="toggle-label">Enable Auto Answer</span>
+      </div>
+      <span class="toggle-badge" id="toggleBadge">Off</span>
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
 </body>
+
 </html>

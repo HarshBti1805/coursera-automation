@@ -1,0 +1,7 @@
+AAVAIL Capstone: Deploying a Revenue Forecasting API with Monitoring and Docker
+
+GitHub URL (public):
+https://github.com/HarshBti1805/aavail-ai-workflow-capstone
+
+Local path:
+answers/capstone/
