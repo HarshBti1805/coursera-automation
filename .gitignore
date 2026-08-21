@@ -1,4 +1,8 @@
 .env
+.env.*
+!.env.example
+*.pem
+credentials.json
 venv/
 __pycache__/
 *.pyc
